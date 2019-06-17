@@ -71,5 +71,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fang1305/sell.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fang1305/sell/issues"
+  },
+  "homepage": "https://github.com/fang1305/sell#readme"
 }
