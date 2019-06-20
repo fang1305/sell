@@ -12,13 +12,3 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-// Vue.use(router)
-
-// let app = Vue.extend(App);
-// let routers = new VueRouter();
-// routers.map({
-//     '/goods':{
-//         component: HelloWorld
-//     }
-// });
-// router,

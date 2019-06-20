@@ -5,17 +5,13 @@
         </div>
         <v-header :seller = "seller"></v-header>
         <div class="tab">
-            <router-link to="/goods" class="tab-item" tag="div">
-                <a>商品</a>
-            </router-link>
-            <router-link to="/ratings" class="tab-item" tag="div">
-                <a>评价</a>
-            </router-link>
-            <router-link to="/seller" class="tab-item" tag="div">
-                <a>商家</a>
+            <router-link v-for="(item, index) in navList" :key="index" :to='item.path' class="tab-item" tag="div">
+                <a v-text="item.item"></a>
             </router-link>
         </div>
-        <router-view></router-view>
+        <keep-alive>
+        <router-view class="viewPage"></router-view>
+        </keep-alive>
     </div>
 </template>
 
@@ -25,7 +21,19 @@
         name: 'App',
         data() {
             return {
-                seller: {}       
+                seller: {},
+                navList:[
+                    {
+                        path: '/goods',
+                        item: '商品'
+                    },{
+                        path: '/ratings',
+                        item: '评价'
+                    },{
+                        path: '/seller',
+                        item: '商家'
+                    }
+                ]     
             }
         },  
         created() {
@@ -50,6 +58,13 @@
     body{
         padding: 0;
         margin: 0;
+    }
+    .viewPage{
+        background: red;
+        position: absolute;
+        top: 175px;
+        bottom: 0;
+        width: 100%;
     }
     #app .tab{
         display: flex;
