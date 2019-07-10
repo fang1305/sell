@@ -1,17 +1,15 @@
 <template>
     <div id="app">
-        <div>
-            <!-- postcss插件会搞定CSS兼容问题 -->
-        </div>
-        <v-header :seller = "seller"></v-header>
-        <div class="tab">
-            <router-link v-for="(item, index) in navList" :key="index" :to='item.path' class="tab-item" tag="div">
-                <a v-text="item.item"></a>
-            </router-link>
-        </div>
+        <!-- <header>{{headerText}}</header> -->
+        <!-- <v-header :seller = "seller"></v-header> -->
         <keep-alive>
-        <router-view class="viewPage"></router-view>
+            <router-view class="viewPage"></router-view>
         </keep-alive>
+        <!-- <div class="tab">
+            <router-link v-for="(item,index) in navList" @click="chengFooter(item.item)" :key="index" :to="item.path" class="tab-item">
+                <span v-text="item.item"></span>
+            </router-link>
+        </div> -->
     </div>
 </template>
 
@@ -21,31 +19,40 @@
         name: 'App',
         data() {
             return {
+                headerText: 'dsads',
                 seller: {},
                 navList:[
                     {
-                        path: '/goods',
-                        item: '商品'
+                        path: '/chat',
+                        item: '微我'
                     },{
-                        path: '/ratings',
-                        item: '评价'
+                        path: '/address',
+                        item: '通讯录'
                     },{
-                        path: '/seller',
-                        item: '商家'
+                        path: '/supply',
+                        item: '供求'
+                    },{
+                        path: '/find',
+                        item: '发现'
+                    },{
+                        path: '/my',
+                        item: '我'
                     }
                 ]     
             }
         },  
         created() {
-            this.$http.get('/api/seller').then(res => {
-                res = res.data;
-                if(res.errno === 0){
-                    this.seller = res.data;
-                }else{
-                }
-            },err => {
-                console.log(err)
-            })
+            let token = localStorage.getItem('token');
+            if(token){
+
+            }else{
+                this.$router.push('/login');
+            }
+        },
+        methods: {
+            chengFooter(text){
+                
+            }
         },
         components: { 
             "v-header":header 
@@ -59,40 +66,32 @@
         padding: 0;
         margin: 0;
     }
-    .viewPage{
-        background: red;
+    header{
+        width: 100%;
+        height: .88rem;
+        
+    }
+    .tab{
         position: absolute;
-        top: 175px;
         bottom: 0;
         width: 100%;
-    }
-    #app .tab{
+        height: 88px;
+        background: #FFF;
+        border-top: 1px solid #f3f5f8;
         display: flex;
-        width: 100%;
-        height: 40px;
-        line-height: 40px; 
-        /* border-bottom: 1px solid rgba(7,17,27,0.1); */
-        position: relative;
-    }
-    #app .tab:after{
-        content: '';
-        width: 100%;
-        height: 1px;
-        left: 0;
-        bottom: 0;
-        background: rgba(7,17,27,0.1);
-        position: absolute;
-    }
-    #app .tab .tab-item{
-        flex: 1;
-        -webkit-tap-highlight-color:transparent;
         text-align: center;
     }
-    #app .tab .tab-item a{
-        display: block;
+    .tab .tab-item{
+        flex: 1;
+        line-height: 88px;
+        font-size: 20px;
         color: #333;
     }
-    #app .tab .router-link-active a{
-        color: #3699FF;
+    .viewPage{
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        position: absolute;
     }
 </style>
