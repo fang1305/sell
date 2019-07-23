@@ -12,11 +12,17 @@ export default new Router({
       component: HelloWorld,
       children: [
         {
-            path: '/goods',
-            component: resolve => require(['../components/goods/goods.vue'], resolve)
+            path: '/supply',
+            component: resolve => require(['../components/supply/index.vue'], resolve)
         }, {
             path: '/address',
             component: resolve => require(['../components/address/index.vue'], resolve)
+        }, {
+            path: '/my',
+            component: resolve => require(['../components/my/index.vue'], resolve)
+        }, {
+            path: '/find',
+            component: resolve => require(['../components/find/index.vue'],resolve)
         }, {
             path: '/login',
             component: resolve => require(['../components/login/index.vue'], resolve)
