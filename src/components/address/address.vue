@@ -1,14 +1,14 @@
 <template>
-    <div class='main'>
-
+    <div class="address">
+            聊天页面聊天页面聊天页面聊天页面
     </div>
 </template>
 <script>
 export default {
-    name: 'find',
+    name: 'address',
     data(){
         return {
-            
+
         }
     },
     beforeCreate() {
@@ -20,3 +20,5 @@ export default {
     }
 }
 </script>
+<style scoped>
+</style>

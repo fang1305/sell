@@ -16,7 +16,7 @@ export default new Router({
             component: resolve => require(['../components/supply/index.vue'], resolve)
         }, {
             path: '/address',
-            component: resolve => require(['../components/address/index.vue'], resolve)
+            component: resolve => require(['../components/address/address.vue'], resolve)
         }, {
             path: '/my',
             component: resolve => require(['../components/my/index.vue'], resolve)

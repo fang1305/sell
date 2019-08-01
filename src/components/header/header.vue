@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="header" v-text="seller.item">
         通讯录s
     </div>
 </template>
@@ -12,7 +12,7 @@ export default {
         }
     },
     props:{
-        seller: ''
+        seller: Object
     }
 }
 </script>

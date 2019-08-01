@@ -44,12 +44,16 @@ export default {
                 item: '我'
             }
         ] ,
+        seller:{
+            path: '/chat',
+            item: '微我'
+        },
         msg: 'Welcome to Your Vue.js App'
     }
   },methods: {
       changeNav(index) {
           this.activeIndex = index;
-          this.seller = {text: '888'};
+          this.seller = this.navList[index];
       }
   },created() {
       this.$router.push('/chat')
