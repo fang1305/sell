@@ -19,7 +19,6 @@ export default {
 <style scoped>
     .header{
         width: 100%;
-        height: 88px;
         line-height: 88px;
         text-align: center;
         background: #FFF;

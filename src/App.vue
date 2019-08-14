@@ -68,8 +68,15 @@
     }
     header{
         width: 100%;
-        height: .88rem;
-        
+        height: 88px;
+        line-height: 88px;
+        border-bottom: 1px solid #F3F5F8;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        padding: 0 30px;
+        box-sizing: border-box;
     }
     .tab{
         position: absolute;
@@ -92,6 +99,18 @@
         top: 0;
         bottom: 0;
         background: #fff;
-        position: absolute;
+        /* position: absolute; */
+    }
+    .callback{
+        background: url('../src/image/icon_fanh.png') no-repeat;
+        width: 30px;
+        background-size: 18px auto;
+        background-position: center left;
+    }
+    .rightBtn{
+        background: url('../src/image/icon_fanh.png') no-repeat;
+        width: 80px;
+        background-size: 30px auto;
+        background-position: center right;
     }
 </style>

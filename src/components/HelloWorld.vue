@@ -71,10 +71,16 @@ export default {
     top: 0;
     bottom: 0;
 }
+.header{
+    height: 88px;
+    width: 100%;
+    background: #3699FF;
+}
 .viewPage{
     position: absolute;
-    top: 88px;
+    top: 0;
     width: 100%;
+    overflow: scroll;
     bottom: 88px;
     border-top: 1px solid #F3F5f8;
     border-bottom: 1px solid #F3F5f8;
@@ -96,6 +102,9 @@ export default {
     background: url('../../src/image/icon_footer/bottombtn0101.png') no-repeat;
     background-size: 42px auto;
     background-position: center 16px;
+}
+.footerBox .footer.active{
+    color: #3699FF;
 }
 .footerBox .footer:nth-child(1).active{
     background-image: url('../../src/image/icon_footer/bottombtn0102.png');
