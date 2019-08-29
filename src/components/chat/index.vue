@@ -2,9 +2,7 @@
     <div class="chat">
         <header class="header">
             <div class="flex-def flex-zBetween">
-                <span class="callback"></span>
                 <span class="head flex-item">通讯录</span>
-                <span class="rightBtn"></span>
             </div>
         </header>
         <div class="main" @click="submitFun()">
@@ -64,5 +62,6 @@ export default {
 <style scoped>
 .main{
     line-height: 88px;
+    margin-top: 88px;
 }
 </style>

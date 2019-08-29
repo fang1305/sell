@@ -14,11 +14,6 @@
 
 <script>
 import headerPage from './header/header.vue'
-// import Vue from 'vue';
-// Vue.component('v-header', {
-//     props: ['postTitle'],
-//     template: '<h3>89898989</h3>'
-// })
 export default {
   name: 'HelloWorld',
   data () {
@@ -56,7 +51,30 @@ export default {
           this.seller = this.navList[index];
       }
   },created() {
-      this.$router.push('/chat')
+        this.$router.push('/chat');
+        let self = this;
+        this.$axios({
+            method: 'POST',
+            withCredentials: false,
+            url: '/api/user_center/index',
+            data: {
+                token: localStorage.getItem('token'),
+            }
+        })
+        .then(function(ret){
+            if (ret.data.code === 200) {
+                console.log(JSON.stringify(ret.data, null, 4))
+                localStorage.setItem('userlogo',ret.data.data.info.head_img_url);
+                localStorage.setItem('nickname',ret.data.data.info.nickname);
+                localStorage.setItem('username',ret.data.data.info.username);
+                localStorage.setItem('usercompany',ret.data.data.info.current_company);
+            } else {
+                self.message.error(ret.data.msg);
+            }
+        })
+        .catch(function(err){
+            console.log(err);
+        });
   },
   components:{
       "v-header": headerPage

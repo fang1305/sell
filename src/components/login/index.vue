@@ -34,10 +34,6 @@ export default {
             .then(function(res){
                     console.log(JSON.stringify(res, null, 4))
                 if (res.data.code === 200) {
-                    // self.message({
-                    //     message: '成功',
-                    //     type: 'success'
-                    // })
                     localStorage.setItem('token',res.data.data.token);
                     self.$router.push('/')
                 } else {

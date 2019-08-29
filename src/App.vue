@@ -43,10 +43,11 @@
         },  
         created() {
             let token = localStorage.getItem('token');
-            if(token){
-
-            }else{
+            console.log(token == null);
+            if(token == null || !token){
                 this.$router.push('/login');
+            }else{
+                this.$router.push('/');
             }
         },
         methods: {
@@ -77,6 +78,28 @@
         color: #333;
         padding: 0 30px;
         box-sizing: border-box;
+        position: fixed;
+        background: #FFF;
+        top:0;
+    }
+    .iconMore{
+        position: relative;
+    }
+    .iconMore:after {
+        content: " ";
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-width: 4px 4px 0 0;
+        border-color: #C8C8CD;
+        border-style: solid;
+        -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+        top: -4px;
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        right: .33rem;
     }
     .tab{
         position: absolute;

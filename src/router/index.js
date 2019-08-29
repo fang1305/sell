@@ -6,9 +6,20 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+      {
+          path: '/',
+          redirect: '/workbench'
+          // meta: {
+          //     title: '',
+          //     requireAuth: true,  // 添加该字段，表示进入这个路由是需要登录的
+          // },
+      },
     {
-      path: '/',
-      name: 'HelloWorld',
+        path: '/login',
+        component: resolve => require(['../components/login/index.vue'], resolve)
+    },
+    {
+      path: '/workbench',
       component: HelloWorld,
       children: [
         {
@@ -23,10 +34,7 @@ export default new Router({
         }, {
             path: '/find',
             component: resolve => require(['../components/find/index.vue'],resolve)
-        }, {
-            path: '/login',
-            component: resolve => require(['../components/login/index.vue'], resolve)
-        }, {
+        },  {
             path: '/seller',
             component: resolve => require(['../components/seller/seller.vue'], resolve)
         }, {
