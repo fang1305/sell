@@ -26,6 +26,9 @@
                         path: '/chat',
                         item: '微我'
                     },{
+                        path: '/goods',
+                        item: '微我'
+                    },{
                         path: '/address',
                         item: '通讯录'
                     },{
@@ -44,11 +47,11 @@
         created() {
             let token = localStorage.getItem('token');
             console.log(token == null);
-            if(token == null || !token){
-                this.$router.push('/login');
-            }else{
-                this.$router.push('/');
-            }
+            // if(token == null || !token){
+            //     this.$router.push('/login');
+            // }else{
+            //     this.$router.push('/');
+            // }
         },
         methods: {
             chengFooter(text){

@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 Vue.use(Router)
 
 export default new Router({
+  mode: "history",
   routes: [
       {
           path: '/',
@@ -33,10 +34,31 @@ export default new Router({
             component: resolve => require(['../components/my/index.vue'], resolve)
         }, {
             path: '/find',
-            component: resolve => require(['../components/find/index.vue'],resolve)
-        },  {
+            component: resolve => require(['../components/find/index.vue'],resolve),
+            meta: {
+                keepAlive: true
+            },
+            children:[
+                {
+                    path: '/',
+                    component: resolve => require(['../components/find/find0.vue'], resolve)
+                }, {
+                    path: 'ask',
+                    component: resolve => require(['../components/find/find1.vue'], resolve)
+                }, {
+                    path: 'cricle',
+                    component: resolve => require(['../components/find/cricle.vue'], resolve)
+                }
+            ]
+        }, {
             path: '/seller',
             component: resolve => require(['../components/seller/seller.vue'], resolve)
+        }, {
+            path: '/seller',
+            component: resolve => require(['../components/seller/seller.vue'], resolve)
+        }, {
+            path: '/HelloWorld',
+            component: resolve => require(['../components/HelloWorld.vue'], resolve)
         }, {
             path: '/ratings',
             component: resolve => require(['../components/ratings/ratings.vue'], resolve)
