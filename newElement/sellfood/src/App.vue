@@ -2,12 +2,11 @@
     <div id="app">
         <v-header :seller="seller"></v-header>
         <div class="tab">
-            <router-link class="tab-item" v-for="(item,index) in tabNav" :key="index" :to="item.link">
+            <router-link :seller="seller" class="tab-item" v-for="(item,index) in tabNav" :key="index" :to="item.link">
                 {{item.name}}
             </router-link>
         </div>
         <router-view class="content"></router-view>
-        <div class="footer">footer</div>
     </div>
 </template>
 

@@ -22,16 +22,18 @@
         <div class="background">
             <img :src="seller.avatar" width="100%" alt="">
         </div>
-        <div v-show="detailShow" class="detail">
-            <div class="detail-wrapper clearfix">
-                <div class="detail-main">
-                    <v-star :size="48" :score="seller.score"></v-star>
+        <transition name="fade">
+            <div class="detail" v-show="detailShow"  @click='hideAll()'>
+                <div class="detail-wrapper clearfix">
+                    <div class="detail-main">
+                        <v-star :size="48" :score="seller.score"></v-star>
+                    </div>
+                </div>
+                <div class="detail-close">
+                    <i class="icon-close"></i>
                 </div>
             </div>
-            <div class="detail-close">
-                <i class="icon-close"></i>
-            </div>
-        </div>
+        </transition>
     </div>
 </template>
 <script type='tex/ecmascript-6'>
@@ -57,6 +59,9 @@ export default {
     methods: {
         showDetail(){
             this.detailShow = true;
+        },
+        hideAll(){
+            this.detailShow = false;
         }
     },
 }
@@ -95,10 +100,15 @@ export default {
         z-index: 100
         top: 0
         left: 0
-        background rgba(7,17,27,.7)
         width: 100%
         height: 100%
         overflow: auto
+        transition: all 0.5s
+        background: rgba(7,17,27,0.7)
+        backdrop-filter: blur(10px)
+        &.fade-enter, &.fade-leave
+            opacity: 0
+            background: rgba(7,17,27,0)
         .detail-wrapper
             min-height 100%
             .detail-main
