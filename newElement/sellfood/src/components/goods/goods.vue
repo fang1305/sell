@@ -13,7 +13,7 @@
                 <li class="food-list" v-for="(item,index) in goods" :key='index'>
                     <h1 class='title'>{{item.name}}</h1>
                     <ul>
-                       <li v-for="(food,indexs) in item.foods" :key="indexs" class="food-item">
+                       <li @click="selectFood(food,$event)" v-for="(food,indexs) in item.foods" :key="indexs" class="food-item">
                             <div class="icon">
                                 <img :src="food.icon" />    
                             </div>   
@@ -29,35 +29,93 @@
                                 <span>{{food.price}}</span>
                                 <span v-show="food.oldPrice">{{food.oldPrice}}</span>
                             </div>
+                            <div class="cartcontrol-wrapp">
+                                <v-cartcontrol @addcart="_drop" :food="food"></v-cartcontrol>
+                            </div>
                         </li> 
                     </ul>
                 </li>
             </ul>
         </div>
-    <v-shopcart></v-shopcart>
+    <v-shopcart ref="shopcart" :foods="selectFoods"></v-shopcart>
+    <v-food :food="selectedFood"></v-food>
     </div>
 </template>
-<script>
+<script  type="text/ecmascript-6">
 /* eslint-disable */
 const ERR_OK = 0;
 import vShopcart from '../shopcart/shopcart'
+import vFood from '../food/food'
+import vCartcontrol from '../cartcontrol/cartcontrol'
 export default {
     data(){
         return {
-            goods: {},
-            classMap: ''
+            goods: [],
+            classMap: '',
+            selectedFood: {},
+            ballObj: {}
         }
     },
+    
     components:{
-        vShopcart
+        vShopcart,vFood,vCartcontrol
     },
     props: {
         seller: {
             type: Object
         }
     },
+    computed: {
+        selectFoods(){
+            console.log('返回的数据')
+            console.log(this.goods)
+            let foods = [];
+            this.goods.forEach(good => {
+                good.foods.forEach(food =>{
+                    if(food.count){
+                        console.log(food)
+                        foods.push(food);
+                    }
+                })
+            })
+            return foods;
+        }
+    },
+    events:{
+        'cart.add'(target){
+            // 父组件获取点击加号传来的组件
+            console.log('哼哼哈嘿')
+            // this._drop(target);
+        }
+    },   
     methods: {
-        
+        // 获取添加
+        _drop(target){
+            this.$refs.shopcart.dropFun(target)
+            // 调用shopcart中的drop方法
+        },
+        selectFood(food,event){
+            if (!event._constructed) {
+                return;
+            }
+            this.selectedFood = food;
+        },
+        selectMenu(index,event){
+            if(!event._constructed){
+                return;
+            }
+            let foodList = this.$els.foodsWrapper.getElementsByClassName('food-list-hook');
+            let el = foodList[index];
+        },
+        _initScroll(){
+            // this.meunScroll = new BScroll(this.$els.menuWrapper,{
+            //     click: true
+            // });
+            // this.foodsScroll = new BScroll(this.$els.foodsWrapper,{
+            //     click: true,
+            //     probeType: 3
+            // })
+        }
     },
     created() {
         this.$http.get('/goods').then((response) => {
