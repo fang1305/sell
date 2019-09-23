@@ -38,7 +38,7 @@
             </ul>
         </div>
     <v-shopcart ref="shopcart" :foods="selectFoods"></v-shopcart>
-    <v-food :food="selectedFood"></v-food>
+    <v-food :food="selectedFood" ref="vfood"></v-food>
     </div>
 </template>
 <script  type="text/ecmascript-6">
@@ -67,8 +67,6 @@ export default {
     },
     computed: {
         selectFoods(){
-            console.log('返回的数据')
-            console.log(this.goods)
             let foods = [];
             this.goods.forEach(good => {
                 good.foods.forEach(food =>{
@@ -91,14 +89,17 @@ export default {
     methods: {
         // 获取添加
         _drop(target){
-            this.$refs.shopcart.dropFun(target)
-            // 调用shopcart中的drop方法
+            // 优化体验,异步执行下落动画
+            // this.$nextTick(()=>{
+                this.$refs.shopcart.dropFun(target)
+            // })
         },
         selectFood(food,event){
-            if (!event._constructed) {
-                return;
-            }
+            // if (!event._constructed) {
+            //     return;
+            // }
             this.selectedFood = food;
+            this.$refs.vfood.show();
         },
         selectMenu(index,event){
             if(!event._constructed){

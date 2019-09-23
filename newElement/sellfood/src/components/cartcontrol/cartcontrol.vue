@@ -28,6 +28,7 @@ export default {
             }else{
                 this.food.count++;
             }
+            // 方法传值
             this.$emit('addcart',event.target)
             // this.$dispathch('cart.add',event.target)
         },
