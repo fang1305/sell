@@ -13,7 +13,7 @@
                 <li class="food-list" v-for="(item,index) in goods" :key='index'>
                     <h1 class='title'>{{item.name}}</h1>
                     <ul>
-                       <li @click="selectFood(food,$event)" v-for="(food,indexs) in item.foods" :key="indexs" class="food-item">
+                       <li  @click="selectFood(food,$event)" v-for="(food,indexs) in item.foods" :key="indexs" class="food-item">
                             <div class="icon">
                                 <img :src="food.icon" />    
                             </div>   
@@ -38,7 +38,7 @@
             </ul>
         </div>
     <v-shopcart ref="shopcart" :foods="selectFoods"></v-shopcart>
-    <v-food :food="selectedFood" ref="vfood"></v-food>
+    <v-food :food="selectedFood" ref="vfood" @addcart="_drop"></v-food>
     </div>
 </template>
 <script  type="text/ecmascript-6">
@@ -105,7 +105,7 @@ export default {
             if(!event._constructed){
                 return;
             }
-            let foodList = this.$els.foodsWrapper.getElementsByClassName('food-list-hook');
+            let foodList  = this.$els.foodsWrapper.getElementsByClassName('food-list-hook');
             let el = foodList[index];
         },
         _initScroll(){

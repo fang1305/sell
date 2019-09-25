@@ -1,9 +1,9 @@
 <template>
     <div class='cartcontrol'>
-        <div class="cart-add fl icon-add_circle" @click="addCount($event)">+</div>
+        <div class="cart-add fl icon-add_circle" @click.stop.prevent="addCount($event)">+</div>
         <div v-show="food.count>0" class="fl cart-count">{{food.count}}</div>
         <transition name='move'>
-            <div v-show='food.count>0' class="fl cart-decrease" @click="decreaseCart()">
+            <div v-show='food.count>0' class="fl cart-decrease" @click.stop.prevent="decreaseCart()">
                 <span class="inner">减</span>
             </div>
         </transition>
@@ -41,7 +41,8 @@ export default {
 <style lang="stylus">
 .cartcontrol
     font-size: 30px
-    width: 50%;
+    // width: 50%;
+    width: 100%;
     text-align: right;
     line-height 40px;
     height: 80px;
@@ -56,6 +57,7 @@ export default {
             text-align: center
             border-radius 40px;
             display inline-block;
+            z-index: 999
             border: 2px solid #3699FF;
             transition: all 0.4s linear;
         &.move-transition

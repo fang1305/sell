@@ -51,16 +51,6 @@ export default {
             fold: true,
             balls: [{
                 show: false
-            },{
-                show: false
-            },{
-                show: false
-            },{
-                show: false
-            },{
-                show: false
-            },{
-                show: false
             }],
             dropBall: []
         }
@@ -135,14 +125,14 @@ export default {
                     if(ball.show){
                         // 获取元素视图定位
                         let rect = ball.el.getBoundingClientRect();
-                        console.log(el)
                         let x = rect.left-32;
                         let y = -(window.innerHeight - rect.top -22);
+                        console.log(window.innerHeight+'=='+rect.top+'==='+x+'==='+y)
                         el.style.display = '';
-                        // el.style.webkitTransform = `translate3d(0,${y}px,0)`;
+                        el.style.webkitTransform = `translate3d(0,${y}px,0)`;
                         el.style.transform = `translate3d(0,${y}px,0)`;
+                        console.log(el.style.transform)
                         let inner = el.firstElementChild;
-                        console.log(inner)
                         inner.style.webkitTransform = `translate3d(${x}px,0,0)`;
                         inner.style.background = 'red';
                         inner.style.transform = `translate3d(${x}px,0,0)`;
@@ -152,7 +142,7 @@ export default {
             enter(el){
                 /* 触发浏览器重复 */
                 let rf = el.offsetHeight;
-                this.$nextTick(()=>{
+                // this.$nextTick(()=>{
                     el.style.webkitTransform = 'translate3d(0,0,0)';
                     el.style.transform = 'translate3d(0,0,0)';
                     let inner = el.firstElementChild;
@@ -160,7 +150,7 @@ export default {
                     inner.style.webkitTransform = 'translate3d(0,0,0)';
                     inner.style.transform = 'translate3d(0,0,0)';
                     inner.style.background = 'red';
-                })
+                // })
             },
             afterEnter(el){
                 let ball = this.dropBall.shift();
@@ -182,6 +172,7 @@ export default {
         position: fixed;
         bottom: 0;
         width: 100%;
+        z-index: 999
         .shopcart-list
             position absolute
             z-index: -1
@@ -219,7 +210,7 @@ export default {
                 position: fixed
                 left: 32px
                 bottom: 22px
-                z-index: 200
+                z-index: 999
                 width 16px
                 height: 15px
                 transition: all 0.4s cubic-bezier(.49,-0.29,0.75,0.41)
