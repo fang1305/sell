@@ -21,7 +21,7 @@ export default {
         return {
             seller: {},
             tabNav: [{
-                link: '/goods/39',
+                link: '/goods',
                 name: '商品'
             },{
                 link: '/rate',

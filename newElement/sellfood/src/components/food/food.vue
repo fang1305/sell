@@ -35,24 +35,28 @@
                 <p class="text">{{food.info}}</p>
             </div>
             <split v-show="food.info"></split>
-            <div class="rating">
+            <div class="ratings">
                 <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <h1 class="title">商品评价</h1>
-                <ratingselect :ratings="food" :select-type="selectType" :only-content="onlyContent" :desc="desc"></ratingselect>      
+                <ratingselect @selectEvt="changeSelect" @onlyContentEvt="changeContent" :ratings="food.ratings" :select-type="selectType" :only-content="onlyContent" :desc="desc"></ratingselect>      
+                <div class="rating-wrapper">
+                    <ul v-show='food.ratings && food.ratings.length'>
+                        <li v-show="needShow(rating.rateType,rating.text)" class="rating-item" :key='index' v-for="(rating,index) in food.ratings">
+                            <div class="user">
+                                <span class="name">{{rating.username}}</span>
+                                <img :src="rating.avatar" width='24px' height="24px" alt="" class="avatar" />
+                            </div>
+                            <div class="time">{{rating.rateTime | formatDate}}</div>
+                            <p class='text'>
+                                <span :class="{'icon-thumb_up':rating.rateType === 0}"></span>
+                                <span :class="{'icon-thumb_down':rating.rateType === 1}"></span>
+                                <span>{{rating.text}}</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="no-rating" v-show="!food.ratings||!food.ratings.length">
+                        暂无评价
+                    </div>
+                </div>
             </div>
         </div></div>
     </transition>
@@ -60,11 +64,13 @@
 <script>
 import BScroll from 'better-scroll';
 import Vue from 'vue';
+import {formatDate} from '../../date';
 import cartcontrol from '../cartcontrol/cartcontrol'
 import ratingselect from '../ratingselect/ratingselect'
 import split from '../split/split'
-
-const ALL = 2;
+const POSITIVE = 'positive';
+const NEGATIVE = 'negative';
+const ALL = 'all';
 export default {
     data(){
         return {
@@ -78,6 +84,12 @@ export default {
             }
         }
     },
+    filters:{
+        formatDate(time){
+            let date = new Date(time);
+            return formatDate(date,'yyyy-MM-dd hh:mm');
+        }
+    },
     components:{
         cartcontrol,split,ratingselect
     },
@@ -86,10 +98,39 @@ export default {
             type: Object
         }
     },
+    complete: function() {
+        console.log(JSON.stringify(this.food))
+    },
     computed: {
     },
     methods: {
+        changeSelect(type){
+            this.selectType = type;
+            this.$nextTick(()=>{
+                this.scroll.refresh();
+            })
+        },
+        changeContent(type){
+            this.onlyContent = type;
+            this.scroll.refresh();
+        },
+        needShow(type,text){
+                console.log(type+'=='+this.onlyContent+'=='+text)
+            if(this.onlyContent && !text){
+                return false;
+            }
+            if(this.selectType === ALL){
+                return true
+            }else if(this.selectType === POSITIVE){
+                console.log(type)
+                return type === 0
+            }else if(this.selectType === NEGATIVE){
+                console.log(type)
+                return type === 1
+            }
+        },
         hide(){
+            console.log(JSON.stringify(this.food))
             this.showFlag = false;
         },
         show(){
@@ -144,7 +185,6 @@ export default {
             transform: translate3d(0,0,0)
         .image-header
             width: 100%
-            opacity 0
             position: relative
             // padding的百分比,是相对宽度计算的,这样实现宽高相同
             height: 0
@@ -222,5 +262,20 @@ export default {
                 padding: 0 16px;
                 font-size 24px;
                 color: #666
-        
+        .ratings
+            padding-top: 36px
+            .title
+                line-height 28px;
+                margin-left 36px;
+                font-size 28px;
+                color rgb(7,17,27)
+            .rating-item
+                padding: 30px;
+                border-bottom 1px solid #f3f5f8;
+            .no-rating
+                width 100%;
+                text-align center;
+                font-size 24px;
+                color #999;
+
 </style>

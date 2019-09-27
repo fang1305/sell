@@ -13,7 +13,8 @@ export default new Router({
       name: 'HelloWorld',
       component: HelloWorld
     }, {
-      path: '/goods/:id',
+        path: '/goods',
+    //   path: '/goods/:id',
       component: resolve => require(['../components/goods/goods.vue'], resolve)
     }, {
       path: '/seller',
