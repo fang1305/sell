@@ -98,6 +98,7 @@ export default {
             // if (!event._constructed) {
             //     return;
             // }
+            console.log(this.seller)
             this.selectedFood = food;
             this.$refs.vfood.show();
         },

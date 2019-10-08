@@ -15,7 +15,10 @@ export default new Router({
     }, {
         path: '/goods',
     //   path: '/goods/:id',
-      component: resolve => require(['../components/goods/goods.vue'], resolve)
+        component: resolve => require(['../components/goods/goods.vue'], resolve)
+    }, {
+        path: '/ratings',
+        component: resolve => require(['../components/ratings/ratings.vue'], resolve)
     }, {
       path: '/seller',
       component: resolve => require(['../components/seller/seller.vue'], resolve)

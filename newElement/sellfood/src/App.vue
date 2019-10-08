@@ -24,7 +24,7 @@ export default {
                 link: '/goods',
                 name: '商品'
             },{
-                link: '/rate',
+                link: '/ratings',
                 name: '评论'
             },{
                 link: '/seller',
