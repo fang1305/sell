@@ -1,0 +1,50 @@
+.mc-header { padding: 20px 0;}
+.mc-header .wrap { display: flex; display: -webkit-flex;}
+.mc-header .title { width: 163px; font-size: 24px; line-height: 1; color: #4A4A4A; text-align: center;}
+.mc-header .mc-nav { flex: 1; }
+.mc-header .mc-nav .mainNav { display: inline-block; margin-left: 330px;}
+.mc-header .mc-nav .mainNav a { color: #4A4A4A; text-decoration: none;}
+.mc-header .mc-nav .mainNav .subTrigger { float: left; list-style: none; font-size: 14px; line-height: 24px; color: #4A4A4A; padding: 0 20px;}
+.mc-header .mc-nav .mainNav .subTrigger span { float: left;}
+.mc-header .mc-nav .mainNav .subTrigger img { width: 9px; height: 5px; float: left; margin-top: 10px; margin-left: 5px;}
+
+.main { width: 100%; background-color: #FAFAFA;}
+.main .wrap { display: flex; display: -webkit-flex;}
+.main .left { min-width: 153px; padding-top: 20px; background-color: #fff; padding-bottom: 50px;}
+.main .left .baseinfo { text-align: center;}
+.main .left .baseinfo img { width: 74px; height: 74px; border-radius: 50%;}
+.main .left .baseinfo .name { font-size: 12px; line-height: 1; color: #4A4A4A; margin-top: 16px;}
+.main .left .baseinfo:after { content:""; clear: both; display: block;}
+.main .left .mc-list { padding-top: 10px;}
+.main .left .mc-list .mc-menu-item { padding-left: 9px;}
+.main .left .mc-list .mc-menu-item a { text-decoration: none;}
+.main .left .mc-list .mc-menu-item .title { display: block; padding-top: 20px;}
+.main .left .mc-list .mc-menu-item .title img { height: 12px; width: auto; }
+.main .left .mc-list .mc-menu-item.myaccount .title img { height: 11px;}
+.main .left .mc-list .mc-menu-item.myorder .title img { height: 14px;}
+.main .left .mc-list .mc-menu-item.setting .title img { height: 13px;}
+.main .left .mc-list .mc-menu-item .title span { font-size: 14px; line-height: 1; color: #4A4A4A; font-weight: bold;}
+.main .left .mc-list .mc-menu-item .mc-menu-sub-content { font-size: 12px; line-height: 1; color: #4A4A4A;}
+.main .left .mc-list .mc-menu-item .mc-menu-sub-content li { list-style: none; padding-left: 17px; margin-top: 15px;}
+.main .left .mc-list .mc-menu-item .mc-menu-sub-content li a { color: #4A4A4A;}
+
+.main .right { flex: 1;}
+.main .right .bookin { min-height: 425px; background-color: #fff; margin-left: 15px; margin-top: 15px;}
+.main .right .bookin .title { font-size: 14px; line-height: 1; color: #4A4A4A; padding: 30px 20px 20px; border-bottom: 1px solid #E9E9E9;}
+.main .right .bookin .cont { padding-bottom: 60px;}
+.main .right .bookin .cont .input-group { display: flex; display: -webkit-flex; margin-top: 42px;}
+.main .right .bookin .cont .input-group label { width: 146px; padding-right: 10px; text-align: right; font-size: 14px; color: #4A4A4A; line-height: 36px;}
+.main .right .bookin .cont .input-group input { width: 342px; height: 34px; font-size: 14px; color: #4A4A4A; line-height: 34px; border-radius:2px; border: 1px solid #D8D8D8; margin-right: 10px;}
+.main .right .bookin .cont .input-group .selfile { width: 96px; height: 36px; border-radius:2px; background-color: #49A0FF; font-size: 12px; color: #fff; line-height: 36px; text-align: center; cursor: pointer; }
+.main .right .bookin .cont .zhu { font-size: 12px; color: #999999; line-height: 17px; margin-top: 10px; padding-left: 156px;}
+.main .right .bookin .cont .btns { padding-left: 156px; margin-top: 30px;}
+.main .right .bookin .cont .btns div { display: inline-block; width: 72px; height: 36px; border-radius:2px; font-size: 12px; line-height: 36px; text-align: center; cursor: pointer; }
+.main .right .bookin .cont .btns .in { background-color: #49A0FF; color: #fff; margin-right: 25px;}
+.main .right .bookin .cont .btns .cancel { background-color: #D8D8D8; color: #999;}
+
+.main .right .bookin .search-result { padding-bottom: 40px;}
+.main .right .bookin .search-result .title { padding: 32px 20px 28px; border-bottom: 0; border-top: 1px solid #E9E9E9;}
+.main .right .bookin .search-result .result { max-width: 830px; padding-bottom: 30px; border: 1px dashed #A8D2FF; margin: 0 auto; text-align: center;}
+.main .right .bookin .search-result .result img { width: 55px; height: 63px; margin-top: 20px;}
+.main .right .bookin .search-result .result p { font-size: 12px; line-height: 1; color: #999999; margin-top: 10px;}
+.main .right .bookin .search-result .download { width: 96px; height: 36px; border-radius:2px; background-color: #49A0FF; font-size: 12px; color: #fff; line-height: 36px; text-align: center; cursor: pointer; margin: 0 auto; margin-top: 30px;} 

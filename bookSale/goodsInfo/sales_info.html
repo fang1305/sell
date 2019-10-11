@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="divport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>秒杀详情</title>
+    <link rel="stylesheet" type="text/css" href="../css/public/public.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pagination.css" />
+    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="ad">
+        <img src="../img/ad/1.png" />
+        <div class="close">
+            关闭
+        </div>
+    </div>
+    <div class="header">
+        <div class="wrap">
+            <div class="left">您好，欢迎来到华夏网图书售书平台</div>
+            <div class="right">
+                <div class="item">登录</div>
+                <div class="item register">免费注册</div>
+                <div class="item">
+                    <span>我的订单</span>
+                    <img class="arrow" src="../img/arrow_bottom.png" alt="" />
+                </div>
+                <div class="item">客服中心</div>
+                <div class="item">网站留言</div>
+                <div class="item">客户评价</div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="logo">
+            <img src="../img/logo.png" />
+        </div>
+        <div class="center">
+            <div class="block1">
+                <div class="search-group">
+                    <div class="left">
+                        <img src="../img/search.png" alt="" />
+                        <input type="text" name="" id="" value="" placeholder="请输入要搜索的图书" />
+                        <div class="select-type" id="select-type">
+                            <div name="5" class="select-t" id="select-t">
+                                <span>搜索全部</span>
+                                <img src="../img/icon_triangle_2.png" />
+                            </div>
+                            <div class="options" id="options">
+                                <div class="all-field">搜索全部</div>
+                                <ul>
+                                    <li class="">ISBN</li>
+                                    <li class="">书名</li>
+                                    <li class="">作者</li>
+                                    <li class="">出版社</li>
+                                    <li class="selecteds">丛书</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">搜索
+                    </div>
+                </div>
+            </div>
+            <div class="block2">
+                <span>童书馆</span>
+                <span>文学奖</span>
+                <span>人生海海</span>
+                <span>科技通史</span>
+            </div>
+        </div>
+        <div class="shopCart">
+            <span class="text">我的购物车</span>
+            <div class="cart">
+                <img src="../img/shoppimgCart.png" alt="" />
+                <div class="dot">
+                    <div class="num">19</div>
+                </div>
+            </div>
+        </div>
+        <div class="myOrder">
+            我的订单
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="wrap">
+            <div class="title">
+                <span>全部图书分类</span>
+                <img src="../img/arrow_bottom_white.png" alt="" />
+            <div class="bookTypeList">
+                <ul class="list">
+                    <li>
+                        <p>学前用书</p>
+                        <div>
+                            <span>幼儿启蒙</span>
+                            <span>学前认知</span>
+                            <span>幼儿读物</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>中小学图书</p>
+                        <div>
+                            <span>小学名著</span>
+                            <span>中学文学</span>
+                            <span>学生字帖</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>教材教辅/考试资料</p>
+                        <div>
+                            <span>成考</span>
+                            <span>自考</span>
+                            <span class="act">大学教材</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>青年励志</p>
+                        <div>
+                            <span>就业</span>
+                            <span>青年励志</span>
+                            <span>人际与社交</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>生活百科</p>
+                        <div>
+                            <span>育儿胎教</span>
+                            <span>亲子教育</span>
+                            <span>美食营养</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>财经管理</p>
+                        <div>
+                            <span>中国经济</span>
+                            <span>世界经济</span>
+                            <span>金融贸易</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>艺术</p>
+                        <div>
+                            <span>书法</span>
+                            <span>美术</span>
+                            <span>素描/速写</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>工业/工程</p>
+                        <div>
+                            <span>汽车</span>
+                            <span>建筑工程</span>
+                            <span>建筑设计</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>农业牧渔</p>
+                        <div>
+                            <span>种植类</span>
+                            <span>养殖类</span>
+                            <span>园林园艺</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>自然科学</p>
+                        <div>
+                            <span>数学</span>
+                            <span>物理学</span>
+                            <span>地理科学</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>计算机/互联网/手机</p>
+                        <div>
+                            <span>网络通信</span>
+                            <span>电子商务</span>
+                            <span>摄影</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>医疗医学</p>
+                        <div>
+                            <span>心理疾病</span>
+                            <span>妇科学</span>
+                            <span>儿科学</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>法律和政治</p>
+                        <div>
+                            <span>民法</span>
+                            <span>刑法</span>
+                            <span>法律理论</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>社会科学</p>
+                        <div>
+                            <span>中国哲学</span>
+                            <span>军事武器</span>
+                            <span>文化理论</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="allBookClass">
+                    <span>全部图书分类</span>
+                    <img src="../img/arrow_bottom_white.png" alt="" />
+                </div>
+            </div>
+            </div>
+
+            <div class="nav">
+                <a href="">首页</a>
+                <a href="">全网畅销文学榜单</a>
+                <a href="">书店推荐书单</a>
+                <a href="">书店推荐书单</a>
+                <a href="">图书秒杀</a>
+                <a href="">图书拼团</a>
+            </div>
+        </div>
+    </div>
+    <div class="small-navbar">
+        <div class="wrap">
+            <div class="nav goodsNav">
+                <span><a href="">图书></a></span>
+                <span><a href="">教材></a></span>
+                <span><a href="">研究生/本科/专科教材></a></span>
+                <span><a href="">经济管理类></a></span>
+                <span><a href="">经济学原理 （第7版）(套装微观经济学分册+宏观经济学分册 曼昆...</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="goodsMain">
+            <div class="goodsImgs">
+                <div class="selectedImg"><img src="../img/book1.png" /></div>
+                <div class="moreImgGroup">
+                    <div class="moreImg"><img src="../img/book.png" /></div>
+                    <div class="moreImg"><img src="../img/book1.png" /></div>
+                    <div class="moreImg"><img src="../img/book.png" /></div>
+                    <div class="moreImg"><img src="../img/book1.png" /></div>
+                    <div class="moreImg"><img src="../img/book.png" /></div>
+                </div>
+            </div>
+            <div class="goodsIntro">
+                <div class="goodsTxt line">
+                    <h3>经济学原理 （第7版）(套装微观经济学分册+宏观经济学分册 曼昆）</h3>
+                    <p class="intro">我接受生活的糟糕，但拒绝命运的安排。茅盾文学奖超高票获奖，格非代表作，莫言推崇“值得我们骄傲”！见真情，见生死，映照中国人一个世纪的命运。好看又伟大的经典之作！</p>
+                    <a href="">教材每满100减30</a>
+                </div>
+                <div class="author">作者:<span>格非</span> 著 ， <span>新经典</span> 出品     出版社:北京十月文艺出版社      出版时间:2019年08月</div>
+                <div class="score line">
+                    <img src="../img/sales/icon_star.png" />
+                    <img src="../img/sales/icon_star.png" />
+                    <img src="../img/sales/icon_star.png" />
+                    <img src="../img/sales/icon_star.png" />
+                    <img src="../img/sales/icon_star.png" />
+                    <span class="commentNum">187</span><span>条评论</span>
+                </div>
+                <div class="priceBox">
+                    <p>秒杀价</p>
+                    <p class="priceIcon">￥<span class="priceNum">199.00</span>（小于5折）</p>
+                    <p class="oldPrice">原价：￥299.00</p>
+                </div>
+                <div class="timer">
+                    <span>距活动结束还有</span>
+                    <span class="timeNum">129</span>
+                    <span>时</span>
+                    <span class="timeNum">33</span>
+                    <span>分</span>
+                    <span class="timeNum">90</span>
+                    <span>秒</span>
+                </div>
+                <div class="place">
+                    <span>配送至： </span>
+                    <select class="selectPlace">
+                        <option>北京市朝阳区</option>
+                    </select>
+                    <span> 快递 ￥15.00</span>
+                    <p class="service">服 务：由“华夏网”发货，并提供售后服务。 </p>
+                </div>
+                <div class="buyNum">
+                    <span>我要买</span>
+                    <div class="buyNumInput">
+                        <input type='number' value="1" />
+                        <img src="../img/sales/icon_price1.png" alt="" class="add" />
+                        <img src="../img/sales/icon_price0.png" alt="" class="minus" />
+                    </div>
+                    <span>件</span>
+                </div>
+                <div class="addShopcartBtn">
+                    <!-- <span>加入购物车</span> -->
+                </div>
+                <div class="buyNowBtn">立即购买</div>
+            </div>
+        </div>
+        <div class="recommendBooks">
+            <div class="recommendNav">
+                <span class="active">人气单品</span>
+                <span>新书热卖榜</span>
+                <span>七日畅销榜</span>
+            </div>
+            <div class="recommendList">
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+                <div class="list">
+                    <div class="poster">
+                        <img src="../img/book.png" />
+                    </div>
+                    <p class="name">平面设计中的网格系统</p>
+                    <div class="money">¥208.10</div>
+                </div>
+            </div>
+        </div>
+        <div class="goodsDetail">
+            <div class="left">
+                <div class="title">图书精选</div>
+                <div class="list">
+                    <div class="item">
+                        <div class="poster">
+                            <img src="../img/book.png"/>
+                        </div>
+                        <p class="name">引爆社群 移动互联网时代的新</p>
+                        <p class="publish">人民出版社</p>
+                        <div class="money">
+                            <span class="sellCost">¥208.10</span>
+                            <span class="oldCost">定价：¥234.00(8.9折)</span>
+                        </div>
+                    </div> 
+                    <div class="item">
+                        <div class="poster">
+                            <img src="../img/book.png"/>
+                        </div>
+                        <p class="name">引爆社群 移动互联网时代的新</p>
+                        <p class="publish">人民出版社</p>
+                        <div class="money">
+                            <span class="sellCost">¥208.10</span>
+                            <span class="oldCost">定价：¥234.00(8.9折)</span>
+                        </div>
+                    </div> 
+                    <div class="item">
+                        <div class="poster">
+                            <img src="../img/book.png"/>
+                        </div>
+                        <p class="name">引爆社群 移动互联网时代的新</p>
+                        <p class="publish">人民出版社</p>
+                        <div class="money">
+                            <span class="sellCost">¥208.10</span>
+                            <span class="oldCost">定价：¥234.00(8.9折)</span>
+                        </div>
+                    </div> 
+                    <div class="item">
+                        <div class="poster">
+                            <img src="../img/book.png"/>
+                        </div>
+                        <p class="name">引爆社群 移动互联网时代的新</p>
+                        <p class="publish">人民出版社</p>
+                        <div class="money">
+                            <span class="sellCost">¥208.10</span>
+                            <span class="oldCost">定价：¥234.00(8.9折)</span>
+                        </div>
+                    </div> 
+                    <div class="item">
+                        <div class="poster">
+                            <img src="../img/book.png"/>
+                        </div>
+                        <p class="name">引爆社群 移动互联网时代的新</p>
+                        <p class="publish">人民出版社</p>
+                        <div class="money">
+                            <span class="sellCost">¥208.10</span>
+                            <span class="oldCost">定价：¥234.00(8.9折)</span>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+            <div class="right">
+                <div class="detailNav">
+                    <span class="active">商品介绍</span>
+                    <span>售后保障</span>
+                    <span>商品评论500+</span>
+                    <div class="addShop">加入购物车</div>
+                </div>
+                <div class="goodsDesc">
+                    <span>出版社： 湖南文艺出版社</span>
+                    <span>ISBN：9787540477721</span>
+                    <span>版次：1</span>
+                    <span>商品编码：12294724</span>
+                    <span>品牌：其他品牌</span>
+                    <span>包装：平装</span>
+                    <span>开本：16开</span>
+                    <span>出版时间：2018-01-01</span>
+                    <span>用纸：轻型</span>
+                    <span>纸页数：356</span>
+                </div>
+                <div class="introGroup">
+                    <div class="introPart">
+                        <div class="introList" id="intro0">
+                            <div class="title">产品特色</div>
+                            <img src="../img/book.png" class="bookImg" />
+                        </div>
+                        <div class="introList" id="intro1">
+                            <div class="title">编辑推荐</div>
+                            <div class="text">茅盾文学奖得主张炜直面财富激增时代，再度反思社会演进得失<br>
+                                一位巨富以良心对财富的清算<br>
+                                一个勇者以坚守对失败的决战<br>
+                                一位女神以渔歌对流行的抵抗<br>
+                            </div>
+                        </div>
+                        <div class="introList" id="intro2">
+                            <div class="title">内容简介</div>
+                            <div class="text">《艾约堡秘史》称得上是一部出人预料的奇书：就高超精湛的语言艺术、层层递进的叙事技巧、深接地气的当下生活、复杂迥异的人物形象来说，无疑是当代文学中尤为迷人的创作之一，也是张炜本人倍具有突破意义的长篇力作。
+                                小说通过一个私营企业巨头（当下屈指可数的巨富）吞并风光旖旎的海滨沙岸的典型现代事件，聚焦当今中国经济发展与生态保护之间既高度依赖又相互纠结的尖锐现实，直指工业化城市化和资本膨胀过程中的公平与正义问题。集团总裁淳于宝册饱经磨难，世事洞明，具有极为罕见的想象力与创造力，由一个当年的文学青年成长为当今声名显赫、举足轻重的大实业家。由他亲手缔造的狸金集团成为一个无坚不摧的北方王国，然而出乎所有人预料的是，在与一个小小渔村的对峙中却陷入了一场胜负难分的痛苦鏖战。书中浓墨重彩塑造了一个居身海角的勇者吴沙原，深刻揭示和展现了他从土地中汲取力量、不畏险峻的令人感动和信服的整个搏击过程。两位男主人公与研究拉网号子的民俗学家欧驼兰的爱情纠葛，因为别具心裁和一唱三叹，遂成为曲折动人感人至深的奇妙篇章。小说对民风俗韵特别是半岛地区的拉网号子给予了深入探究，以缜密严格的学术品格，铺展为全书的色调与底蕴，是贯穿于近三十万言中不绝于缕的旋律。矛盾错综复杂，运筹与攻防、妥协与坚守、忍韧与撞击，构成了全书跌宕起伏、悠长激烈的华彩乐章。这同时又是一部“爱情大全”，是关于情与欲在资本隆隆推进的物质主义时代尤为细致入微的描述。吴沙原的奉献与牺牲，深爱和顽强，对生于斯长于斯的小小渔村深不见底的情感，也许是书中尤其能打动人心的部分。
+                            </div>
+                        </div>
+                        <div class="introList" id="intro3">
+                            <div class="title">作者简介</div>
+                            <div class="text">
+                                张炜，当代著名作家。中国作家协会副主席，山东省作家协会主席，万松浦书院院长。<br>
+                                1975年开始发表作品，出版各种单行本600余部，主要有《张炜文集48卷》《张炜散文年编20卷》 《张炜中短篇小说年编8卷》《张炜长篇小说年编20卷》。作品译为英、法、日、韩、德、阿、土、瑞典、塞尔维亚、俄、意等多种语言，海外版本100余部。作品曾获得茅盾文学奖、鲁迅文学奖、第四届中国出版政府奖、全国“五个一”精品奖、中华优秀出版物奖等多种国内奖项；并获金石堂受欢迎图书、《亚洲周刊》年度十大华文小说之首、世界华文小说百年百强等海外奖项。为中国当代巨大影响力的作家之一。
+                            </div>
+                        </div>
+                        <div class="introList" id="intro4">
+                            <div class="title">精彩书评</div>
+                            <div class="text">　　★《艾约堡秘史》用道德主义的笔法写一种我觉得很邪恶的小世界，是邪恶，不是罪恶，它不一定是有形地危害这个世界，但是人心的小火苗的东西非常有意思，用道德主义写邪恶，就是让道德主义和邪恶都变得丰厚了，这一点使我特别感兴趣，它有一种魔力。<br>
+                                　　　　　——史航/第三届京东文学奖评委，知名编剧、影评人、策划人
+                            </div>
+                        </div>
+                        <div class="introList" id="intro5">
+                            <div class="title">精彩书摘</div>
+                            <div class="text">
+                                一
+                                我从第一眼看到那个姓欧的女子就被闪电击中了，然后再也不能自拔。不是其他，不是那些破烂故事，我保证今生都不当那种故事里的主角。如实说，那个女子的神情从未见过。那年夏天的海边，我与她相隔只不到三米，心怦怦跳。我在心里说：这是怎样的人啊，口气、眼神和动作。她站起来，怎么看都不像这个世界上的人。后来我才发现那主要是一双眼睛的缘故，它们明亮含蓄，看这个世界时常常走神。我离开她很久还是能感到那目光。我有时想回到她那儿，就像一心要回到一个梦境一样。一些话积攒了太多，说不出，也不知怎么说。我那天从海边草寮回来时突然明白，自己流浪了十一年，原来一直在找一条回家的路。那些油印刊物和书全丢在路上了，这也是我迷路的原因……
+                            </div>
+                            <p class="showAll">查看全部↓</p>
+                        </div>
+                    </div>
+                    <div class="introNav">
+                        <ul>
+                            <li class="scrollView active">产品特色</li>
+                            <li class="scrollView">编辑推荐</li>
+                            <li class="scrollView">内容简介</li>
+                            <li class="scrollView">作者简介</li>
+                            <li class="scrollView">精彩书评</li>
+                            <li class="scrollView">精彩书摘</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="title">
+                        售后保障
+                    </div>
+                    <div class="content">
+                        <div class="list">
+                            <img src="../img/icon_cart.png" class="serviceIcon" />
+                            <div class="desc">
+                                <h3>正品行货</h3>
+                                <p>华夏网图书批发平台商城向您保证所售商品均为正品行货。</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <img src="../img/icon_cart.png" class="serviceIcon" />
+                            <div class="desc">
+                                <h3>全国联保</h3>
+                                <p>华夏网产品与您亲临商场选购的商品享受相同的质量保证。华夏网还为您提供具有竞争力的商品价格和运费政策，请您放心购买！</p>
+                                <p class="warning">注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附
+                                    件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</p>
+                            </div>
+                        </div>
+                        <div class="declare">
+                            <p class="declareName">权利声明</p>
+                            <p>华夏网上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是华夏网重要的经营资源，未经许可，禁止非法转载使用。</p>
+                            <p>注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。
+印刷版次不同，印刷时间和版次以实物为准。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ratings">
+                    <div class="title">
+                        商品评价
+                    </div>
+                    <div class="goodRate">
+                        <div class="rateGroup">
+                            <p class="rateTitle">好评率</p>
+                            <p class="rateNum colorRed">99<span>%</span></p>
+                        </div>
+                        <div class="chooseGroup">
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                            <span class="chooseItem">品质一流(2762)</span>
+                        </div>
+                    </div>
+                    <div class="ratingSelect">
+                        <span>晒图(347)</span>
+                        <span>视频晒单(3)</span>
+                        <span>追评(8)</span>
+                        <span>好评(2200+)</span>
+                        <span>中评(10+)</span>
+                        <span>差评(1)</span>
+                    </div>
+                    <div class="ratingsGroup">
+                        <div class="ratingsList">
+                            <div class="userLogo"><img src='../img/tx.png' /></div>
+                            <div class="userName">讷***2讷***2讷***2讷***2讷***2讷***2讷***2讷***2</div>
+                            <div class="content">
+                                <div class="starScore">
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                </div>
+                                <p class="ratingsTxt fs12">经典小说。名家之作。静下心来，好好阅读。书很好。</p>
+                                <p class="ratingsTime fs12">年轮（套装上下册） 2018-06-03 22:18</>
+                            </div>
+                        </div>
+                        <div class="ratingsList">
+                            <div class="userLogo"><img src='../img/tx.png' /></div>
+                            <div class="userName">讷***2讷***2讷***2讷***2讷***2讷***2讷***2讷***2</div>
+                            <div class="content">
+                                <div class="starScore">
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                </div>
+                                <p class="ratingsTxt fs12">经典小说。名家之作。静下心来，好好阅读。书很好。</p>
+                                <p class="ratingsTime fs12">年轮（套装上下册） 2018-06-03 22:18</>
+                            </div>
+                        </div>
+                        <div class="ratingsList">
+                            <div class="userLogo"><img src='../img/tx.png' /></div>
+                            <div class="userName">讷***2讷***2讷***2讷***2讷***2讷***2讷***2讷***2</div>
+                            <div class="content">
+                                <div class="starScore">
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                    <img src="../img/sales/ratings_star.png" />
+                                </div>
+                                <p class="ratingsTxt fs12">经典小说。名家之作。静下心来，好好阅读。书很好。</p>
+                                <p class="ratingsTime fs12">年轮（套装上下册） 2018-06-03 22:18</>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='wrapper'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="wrap">
+            <div class="item">
+                <div class="center">
+                    <div class="cont">
+                        <img src="../img/icon/icon_foot_1.png" alt="" />
+                        <div class="right">
+                            <p>正规渠道</p>
+                            <p>正品保证</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="center">
+                    <div class="cont">
+                        <img src="../img/icon/icon_foot_2.png" alt="" />
+                        <div class="right">
+                            <p>正规渠道</p>
+                            <p>正品保证</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="center">
+                    <div class="cont">
+                        <img src="../img/icon/icon_foot_3.png" alt="" />
+                        <div class="right">
+                            <p>正规渠道</p>
+                            <p>正品保证</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="center">
+                    <div class="cont">
+                        <img src="../img/icon/icon_foot_4.png" alt="" />
+                        <div class="right">
+                            <p>正规渠道</p>
+                            <p>正品保证</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="item">
+                <div class="cont">
+                    <p class="title">批发指南</p>
+                    <a href="">
+                        <p>批发订购流程</p>
+                    </a>
+                    <a href="">
+                        <p>批发支付流程</p>
+                    </a>
+                    <a href="">
+                        <p>批发需要什么条件</p>
+                    </a>
+                    <a href="">
+                        <p>批发订单处理过程</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cont">
+                    <p class="title">支付方式</p>
+                    <a href="">
+                        <p>在线支付方式 </p>
+                    </a>
+                    <a href="">
+                        <p>批发支付流程</p>
+                    </a>
+                    <a href="">
+                        <p>发票说明 </p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cont">
+                    <p class="title">配送方式</p>
+                    <a href="">
+                        <p>免运费政策</p>
+                    </a>
+                    <a href="">
+                        <p>物流配送服务</p>
+                    </a>
+                    <a href="">
+                        <p>签收验货</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cont">
+                    <p class="title">关于我们</p>
+                    <a href="">
+                        <p>联系我们</p>
+                    </a>
+                    <a href="">
+                        <p>公司简介</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="cont">
+            <a href="">联系华夏网众</a> |
+            <a href="">关于华夏网众</a> |
+            <a href="">客服中心</a> |
+            <a href="">行业资讯</a> |
+            <a href="">友情链接</a> |
+            <a href="">销售联盟</a>
+        </div>
+        <div class="copy">
+            京ICP证140007号 京ICP备12044943号-2 出版物经营许可:新出发京零字第朝080082
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js" type="text/javascript"></script>
+<script src="../js/pagination.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        var shopCartNum = $(".shopCart .num").html();
+        if (shopCartNum <= 9) {
+            $(".top .shopCart .cart .dot").css({
+                "width": "12px"
+            })
+            $(".top .shopCart .cart .dot .num").css({
+                "margin-left": "0"
+            })
+        } else if (shopCartNum > 9 && shopCartNum < 100) {
+            $(".top .shopCart .cart .dot").css({
+                "width": "12px"
+            })
+            $(".top .shopCart .cart .dot .num").css({
+                "margin-left": "-4px"
+            })
+        } else {
+            $(".top .shopCart .cart .dot").css({
+                "width": "15px"
+            })
+            $(".top .shopCart .cart .dot .num").css({
+                "margin-left": "-6px"
+            })
+        }
+
+        $(".select-t").hover(function () {
+            $(".options").css({
+                'display': "block"
+            })
+        });
+
+        // 推荐图书类型切换
+        $('.recommendNav span').on('click',function (params) {
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+        // 锚定位
+        $('.scrollView').on('click',function (params) {
+            var index = $(this).index();
+            document.getElementById("intro"+index).scrollIntoView();
+        })
+
+        // 分页
+        var arr = [];
+        for (var i=0;i<100;i++){
+            arr.push(i)
+        }
+        $('#wrapper').pagination({
+            dataSource: arr,
+            showGoInput: true,
+            showGoButton: true,
+            formatGoInput: '到第<%= input %>页',
+            goButtonText: '确认',
+            callback: function(data, pagination) { //回调函数 当我们点击页数执行的方法
+                console.log(data,pagination)　　//pagination对象 有我们需要的当前选择页数。
+            }
+        })
+    })
+</script>
+
+</html>

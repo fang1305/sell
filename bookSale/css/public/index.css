@@ -1,0 +1,225 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{font:12px 'Microsoft Yahei',Tahoma,Arial,Helvetica,sans-serif;word-break:break-all;word-wrap:break-word;position:relative;color: #333;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{margin:0;}ul,ol,input{margin:0;padding:0;}li{list-style: none;}
+img{border:none;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+em,i{font-style:normal}b,strong,th{font-weight:normal;}
+textarea{resize:none;}button,input,textarea{/*background: none; border:none;*/font-family:"瀹嬩綋",Tahoma,Arial,Helvetica,sans-serif;vertical-align:middle;}/*input:focus{outline: none;}*/
+a{text-decoration:none;color: #333;}
+html,body{ width:100%;}
+
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);outline: none; /*鍘绘帀a銆乮nput鍜宐utton鐐瑰嚮鏃剁殑钃濊壊澶栬竟妗嗗拰鐏拌壊鍗婇€忔槑鑳屾櫙*/border:0
+}
+input[type='button'], input[type='submit'], input[type='reset'] {
+    -webkit-appearance: none;/*鍘绘帀鑻规灉榛樿鏍峰紡*/
+}
+/*header*/
+.fl{ float:left;}
+.fr{ float:right;}
+.inner{ width:1200px;margin: 0 auto;}
+i,em{ font-style:normal;}
+/*header-new*/
+.clearfix:after{content:'';display: block;clear:both;}
+.clearfix{zoom:1;}
+.w{width: 1200px;margin: 0 auto;}
+.header{width: 100%;height: 60px;background: #333333;}
+.header h1{width: 210px;height: 60px; margin-right: 95px;}
+.header h1 img{width: 100%;position: relative;top: 5px;}
+.header ul{font-size: 16px; line-height: 60px;}
+.header ul li{float: left;margin-left: 29px;}
+.header ul li a{color:#cbcbcb; cursor:pointer;}
+.gyNav .navHidden {cursor: pointer; display:none;  position:absolute; z-index:8888;background:#ffffff; box-shadow:0px 0px 5px 2px #d5d5d5;left:-300px;}
+/*.gyNav .mainBtnBox{cursor: pointer;}*/
+.gyNav .navHidden .icon { background:url(http://yanjun.goaiedu.com/images/iconBg_02.png) no-repeat; width:16px; height:9px; position:absolute; }
+.gyNav .navHidden .icon1 { top:-9px; left:320px;}
+.gyNav .navHidden .icon2 { top:-9px; left:53px;}
+.gyNav .navHidden .icon3 { top:-9px; left:48px;}
+.gyNav .navHidden a { color:#666666; font-size:14px;}
+.gyNav .navHidden a:hover { color:#eb510b;}
+.gyNav .navHidden .titleBox { border-bottom:1px #999999 solid;}
+.gyNav .navHidden .titleBox h2 { line-height:40px; font-weight:normal; font-size:16px; border-bottom:2px #0e6eb8 solid; width:; margin-bottom:-1px;}
+.pl100 { padding-left:78px;}
+.gyNav .navHidden1 { padding-top:10px;  width:1000px; padding-bottom:20px;}
+.gyNav .navHidden2 { width:124px; padding-bottom:10px;}
+.gyNav .navHidden2 li , .navHidden3 li { text-align:center;}
+.gyNav .navHidden3 { width:110px; padding-bottom:10px;}
+.gyNav td { height:40px; border:0; padding:0; text-align:left;}
+.gyNav .navHidden a { line-height:30px;}
+.pt10{ padding-top:10px;}
+.pl30 { padding-left:30px;}
+.phone{font-size: 14px;color:#cbcbcb; line-height: 60px;background: url(../image/head_tel.png) no-repeat left center; padding-left: 34px;}
+
+
+/*foot*/ 
+.offcn_ft_bottom{ text-align:center; padding:40px 0;  line-height:30px; font-size:14px;background:#222222;} 
+.offcn_ft_bottom p{ font-size:14px;color:#fff;} 
+.offcn_ft_bottom a{ color:#fff;font-size:14px;}
+.offcn_ft_bottom span{ color:#fff;} .fix_btn_open{width:56px; height:169px;display:none;position:fixed;z-index:99999;top:58px;right:0;
+background:url(http://yanjun.goaiedu.com/images/fix_btn_open.png) center
+center no-repeat;
+_background:url(http://yanjun.goaiedu.com/images/fix_btn_open.gif) center
+center no-repeat; text-indent:-9999em; cursor:pointer;} 
+/*寮圭獥*/
+.tanchuang{position: absolute;right: 2px;top: 5%;width: 160px;height:
+480px;background: url(http://yanjun.goaiedu.com/image/tanchuang.png) no-repeat
+center;overflow: hidden;z-index: 9999;} .tanchuang em{width: 20px;height:
+20px;float: right;cursor: pointer;margin-top: 41px;} .tanchuang div{width:
+125px;margin-top: 140px;margin-left: 18px;} .tanchuang div a{display:
+block;width: 100%;height: 38px;font-size: 16px;line-height: 38px;text-align:
+center;color: #039a99;border-bottom: 2px solid #039a99;} .tanchuang div
+a:hover{color: #f6900c;font-weight: bold;} .open{position: absolute;right:
+2px;top: 5%;width: 90px;height: 226px;display: none;cursor: pointer;}
+
+/*   byMain   begin   YoungC    201-11-7    */
+
+.banner{height: 540px;background: url("http://yanjun.goaiedu.com/images/bannerbg.jpg") no-repeat center;overflow: hidden;}
+.banner .inner{position: relative;}
+.bannerLeft{position: absolute;left: 67px;top: 35px;}
+.bannerRen{position: absolute;right: 82px;top: 53px;}
+
+/*byM1*/
+.byM1{height: 450px;background: url("http://yanjun.goaiedu.com/images/m1bg.jpg") no-repeat center;}
+.byMTit{font-size: 50px;color: #000;text-align: center;margin-bottom: 30px;padding-top: 500px;}
+.byMTit em{display: inline-block;position: relative;padding: 0 308px;height: 93px;line-height: 93px;}
+.byMTit em:before{content: '';width: 537px;height: 93px;background: url("http://yanjun.goaiedu.com/images/byMtbg-l.png") no-repeat center;position: absolute;left: 0;top: 0;}
+.byMTit em:after{content: '';width: 324px;height: 37px;background: url("http://yanjun.goaiedu.com/images/byMtbg-r.png") no-repeat center;position: absolute;right: -40px;top: 28px;}
+.byMTit em span{color: #03acad;}
+.byamList{margin-left: -20px;padding-top: 60px;}
+.byamList li{width: 285px;height: 263px;border-radius: 35px 35px 0 0;background: #fff;float: left;margin-left: 20px;box-shadow: 0 3px 6px #eaeaea;}
+.byamLTop{background: #03acad;border-radius: 35px 35px 0 0;height: 83px;text-align: center;position: relative;}
+.byamLTIco{width: 60px;height: 60px;border: 2px #03acad solid;border-radius: 50%;background: #fff;position: absolute;left: 50%;margin-left: -30px;top: -30px;overflow: hidden;}
+.byamLTIco img{display: block;width: 100%;height: auto;}
+.byamLTTit{font-size: 26px;color: #fff;font-weight: bold;padding-top: 40px;}
+.byamLBBri{line-height: 28px;text-align: center;padding: 28px 20px;font-size: 16px;color: #666;}
+.byamLBBtn{display: block;width: 155px;height: 40px;line-height: 40px;text-align: center;margin: 0 auto;background: #ff9c1b;color: #fff;border-radius: 25px;font-size: 18px;}
+.byamLBBtn:hover{color: #fff600;font-weight: bold;background: #f6900c;}
+
+
+/*byM2*/
+.byM2{height: 347px;background: url("http://yanjun.goaiedu.com/images/m2bg.jpg") no-repeat center;}
+.byM2 .byMTit{padding-top: 550px;}
+.bylcList{background: url("http://yanjun.goaiedu.com/images/bylcbg.png") no-repeat center  44px;background-size: contain;}
+.bylcList li{display: inline-block;margin-left: 35px;}
+.bylcList li.bylcLi-2{margin-left: 60px;}
+.bylcList li.bylcLi-3{margin-left: 45px;}
+.bylcList li.bylcLi-4{margin-left: 43px;}
+.bylcList li.bylcLi-5{margin-left: 32px;}
+.bylcList li.bylcLi-6{margin-left: 32px;}
+.bylcList li.bylcLi-7{margin-left: 38px;}
+.bylcLTop{width: 97px;height: 97px;background: url("http://yanjun.goaiedu.com/images/bylclibg.png") no-repeat center;margin: 0 auto;}
+.bylcLTit{font-size: 18px;color: #333;padding-top: 5px;}
+.bylcLTP1{font-size: 16px;color: #03acad;font-weight: bold;text-align: center;position: relative;top: 12px;height: 80px;display: table;vertical-align: middle;width: 100%;}
+.bylcLTP1 em{display: table-cell;vertical-align: middle;}
+
+/*byM3*/
+.byM3{height: 2251px;background: url("http://yanjun.goaiedu.com/images/m3bg.jpg") no-repeat center;}
+.byM3 .byMTit{padding-top: 510px;}
+.byM3-1TtSpan1{display: inline-block;width: 220px;height: 60px;line-height: 50px;text-align: center;font-size: 36px;color: #03acad;font-weight: bold;border: 1px #03acad solid;margin-right: 20px;}
+.byM3-1TtSpan2{font-size: 36px;color: #333;font-weight: bold;}
+.byM3-1Tbotm{font-size: 22px;color: #dadada;font-weight: bold;text-transform: uppercase;position:relative;top: -15px;z-index: 1;padding-left: 15px;letter-spacing: 1px;}
+.byM3-1Ttop{position: relative;z-index: 2;}
+.byM3-1CMid{width: 355px;height: 302px;margin: 0 auto;background: url("http://yanjun.goaiedu.com/images/lq1bg.png") no-repeat center;position: relative;z-index: 2;margin-bottom: 50px;}
+.byM3-1CMid p{font-size: 18px;color: #fff;width: 100px;text-align: center;position: absolute;font-weight: bold;}
+.byM3-1CMid p.byM3-1CMP1{left: 128px;top: 40px;}
+.byM3-1CMid p.byM3-1CMP2{left: 40px;top: 200px;}
+.byM3-1CMid p.byM3-1CMP3{right: 30px;top: 200px;}
+.byM3-1Con{position: relative;}
+.lq-1List{position: absolute;height: 333px;width: 100%;top: 0;left: 0;z-index: 1;}
+.lq-1List li{font-size: 18px;color: #666;position: absolute;}
+.lq-1List .lq-1Li1{background: url("http://yanjun.goaiedu.com/images/lqli1bg.png") no-repeat right top;width: 340px;height: 45px;top: 156px;left: 102px;}
+.lq-1List .lq-1Li1 p{padding-top: 20px;}
+.lq-1List .lq-1Li2{background: url("http://yanjun.goaiedu.com/images/lqli2bg.png") no-repeat left top;width: 415px;top: 0;left: 690px;}
+.lq-1List .lq-1Li2 p{padding-left: 50px;padding-top: 20px;line-height: 27px;}
+.lq-1List .lq-1Li3{background: url("http://yanjun.goaiedu.com/images/lqli3bg.png") no-repeat left bottom;width: 400px;bottom: 0;right: 50px;}
+.lq-1List .lq-1Li3 p{padding-left: 55px;padding-bottom: 27px;}
+.ljgdBtn{font-size: 22px;color: #fff;font-weight: bold;width: 320px;height: 60px;line-height: 60px;text-align: center;margin: 0 auto;display: block;background: #ff9c1b;border-radius: 30px;}
+.ljgdBtn:hover{border-radius: 0;background: #f6900c;}
+
+.byM3-2{padding-top: 40px;padding-bottom: 40px;}
+.byM3-2Con{height: 330px;background: url("http://yanjun.goaiedu.com/images/lq2bg.png") no-repeat center bottom;position: relative;margin-top: 5px;margin-bottom: 30px;}
+.byM3-2CList{position: absolute;left: 0;top: 0;height: 330px;width: 100%;}
+.byM3-2CMid{width: 274px;height: 203px;margin: 0 auto;text-align: center;position: relative;top: 165px;z-index: 2;}
+.byM3-2CMP1{font-size: 54px;color: #fff;line-height: 62px;}
+.byM3-2CMP1 span{font-size: 104px;color: #fffc00;}
+.byM3-2CMP2{font-size: 54px;color: #fff;line-height: 62px;}
+.byM3-2CList li{overflow: hidden;position: absolute;}
+.byM3-2CList li span{display: block;float: right;width: 52px;height: 52px;background: #08adb0;border: 2px #25dde0 solid;border-radius: 50%;line-height: 48px;text-align: center;font-size: 27px;color: #fff;}
+.byM3-2CList li p{overflow: hidden;line-height: 52px;font-size: 18px;color: #666;}
+.byM3-2CList li.byM3-2CLi-1{width: 178px;top: 237px;left: 173px;}
+.byM3-2CList li.byM3-2CLi-2{width: 252px;top: 153px;left: 130px;}
+.byM3-2CList li.byM3-2CLi-3{width: 250px;top: 72px;left: 195px;}
+.byM3-2CList li.byM3-2CLi-4{width: 240px;top: 0;left: 330px;}
+.byM3-2CList li.byM3-2CLi-5{top: 0;left: 650px;}
+.byM3-2CList li.byM3-2CLi-6{top: 72px;left: 768px;}
+.byM3-2CList li.byM3-2CLi-7{top: 153px;left: 829px;}
+.byM3-2CList li.byM3-2CLi-8{top: 237px;left: 860px;}
+.byM3-2CList li.byM3-2CLi-5 span,.byM3-2CList li.byM3-2CLi-6 span,.byM3-2CList li.byM3-2CLi-7 span,.byM3-2CList li.byM3-2CLi-8 span{float: left;margin-right: 17px;}
+
+.byM3-3List{margin-left: -20px;padding-top: 10px;padding-bottom: 50px;}
+.byM3-3List li{width: 285px;height: 287px;background: #fff;box-shadow: 0 0 5px #ccc;border-radius: 10px;padding-top: 30px;position: relative;float: left;margin-left: 20px;} 
+.byM3-3List li:before{content: '';width: 174px;height:10px;background: #09aeae;position: absolute;left: 50%;bottom: 0;margin-left:-87px;} 
+.byM3-3List li:hover:before{width: 0;margin-left:0;opacity: 0; }
+.byM3-3LTit{width: 260px;height: 72px;line-height: 67px;text-align: center;font-size: 28px;color: #fff;background:url("http://yanjun.goaiedu.com/images/byM3-3LTitbg.png") no-repeat center;}
+.byM3-3LBri{font-size: 16px;color: #333;padding: 20px 46px 0 46px;line-height:32px;text-align: center;} 
+.byM3-4C-1{width: 304px;height: 193px;background:#09aeae;padding: 40px 18px 0 30px;font-size: 18px;color: #fff;line-height:37px;float: left;} 
+.byM3-4C-2{width: 286px;height: 193px;overflow: hidden;margin-left: 10px;float: left;} 
+.byM3-4C-3{float: left;margin-left:10px;width: 409px;height: 193px;background: #09aeae;padding: 40px 35px 0 40px;font-size: 18px;color: #fff;line-height: 36px;} 
+.byM3-4C-4{float: left;margin-left: 10px;width: 171px;height: 193px;overflow: hidden;}
+.byM3-4C-5{float: left;width: 147px;height: 193px;overflow: hidden;margin-top:10px;} 
+.byM3-4C-6{float: left;width: 147px;height: 193px;overflow: hidden;margin-top: 10px;margin-left: 10px;} 
+.byM3-4C-7{float: left;width:286px;height: 193px;overflow: hidden;margin-top: 10px;margin-left:10px;background: #09aeae;padding: 40px 35px 0 40px;font-size: 18px;color:#fff;line-height: 36px;} 
+.byM3-4C-8,.byM3-4C-9{float: left;margin-left: 10px;margin-top: 10px;width: 290px;height: 193px;overflow: hidden;} 
+.byM3-4Con{padding-top: 10px;}
+
+
+/*byM4*/
+.byM4{height: 769px;background: url("http://yanjun.goaiedu.com/images/m4bg.jpg") no-repeat center;}
+.byM4 .byMTit{padding-top: 30px;}
+.byM4Table{border-collapse: collapse;width: 100%;border: 1px #b0b0b0 solid;}
+.byM4Table thead tr th{height: 98px;font-size: 28px;color: #fffc00;font-weight: bold;background: #09aeae;border-right: 1px #b0b0b0 solid;}
+.byM4Table tbody tr td{height: 98px;font-size: 16px;color: #666;border-right: 1px #b0b0b0 solid;text-align: center;background: #fff;border-bottom: 1px #b0b0b0 solid;line-height: 26px;}
+.byM4TBtn{display: inline-block;width: 188px;height: 50px;line-height: 50px;text-align: center;background: #ff9c1b;font-size: 18px;color: #fff;font-weight: bold;border-radius: 8px;}
+.byM4TBtn:hover{color: #fffc00;background: #f6900c;}
+
+/*byM5*/
+.byM5{height: 403px;background: url("http://yanjun.goaiedu.com/images/m5bg.jpg") no-repeat center;}
+.byM5 .byMTit em{padding: 0 160px;}
+.byM5 .byMTit em:before{left: -160px;}
+.byM5 .byMTit em:after{right: -200px;}
+.byM5 .byMTit{overflow: hidden;padding-top: 30px;}
+
+.byM5Con{background: #fff;height: 196px;box-shadow: 0 0 5px #bbb;padding: 10px;}
+.byM5CBorder{border: 1px #84d6d6 dashed;height: 175px;text-align: center;}
+.byM5CBTit{font-size: 26px;color: #09aeae;font-weight: bold;padding-top: 30px;padding-bottom: 18px;}
+.byM5CBBri{font-size: 22px;color: #000;}
+
+.byM5CBtnBox{text-align: center;position: relative;top: -26px;}
+.byM5CBtnBox a{display: inline-block;width: 216px;height: 70px;line-height: 70px;text-align: center;background: #07bdbd;color: #fff;font-size: 22px;font-weight: bold;margin: 0 73px;border-radius: 5px;}
+.byM5CBtnBox a:hover{background: #09aeae;color: #fffc00;}
+
+/*byM6*/
+.byM6{height: 344px;background: url("http://yanjun.goaiedu.com/images/m6bg.jpg") no-repeat center;}
+.byM6 .byMTit{padding-top: 30px;}
+.byM6CNum{width: 75px;height: 93px;background: url("http://yanjun.goaiedu.com/images/m6libg.png") no-repeat center;line-height: 80px;text-align: center;font-size: 28px;color: #fff;font-weight: bold;}
+.byM6CTit{font-size: 18px;color: #fff;font-weight: bold;}
+.byM6Con{text-align: center;padding-top: 20px;}
+.byM6Con li{display: inline-block;margin: 0 40px;position: relative;}
+.byM6Con li.byM6C-2{top: -11px;}
+.byM6Con li.byM6C-3{top: -22px;}
+.byM6Con li.byM6C-4{top: -30px;}
+.byM6Con li.byM6C-5{top: -40px;}
+.byM6Con li.byM6C-6{top: -50px;}
+.byM6Con li.byM6C-7{top: -60px;}
+
+/*   byMain   END    YoungC    201-11-7    */
+
+
+/*  鍏叡缂撳姩鏍峰紡  */
+
+a,*:before,*:after,.byamList li,.bylcLTP1,.byM3-3List li,.byM3-4Con img,.byM3-4C-1,.byM3-4C-3,.byM3-4C-7,.byM6CTit{-webkit-transition:all 0.3s ease-in-out;-moz-transition: all 0.4s ease-in-out;-ms-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.byamLBBtn{-webkit-transition:all 0s ease-in-out;-moz-transition: all 0s ease-in-out;-ms-transition: all 0s ease-in-out;-o-transition: all 0s ease-in-out;transition: all 0s ease-in-out;}
+.bylcList li:hover .bylcLTP1{transform: rotate(-30deg);}
+.byM3-3List li:hover{transform: translateY(-10px)}
+.byM3-4Con img:hover{transform:scale(1.08);-webkit-transform:scale(1.08);-moz-transform:scale(1.08);-o-transform:scale(1.08);-ms-transform:scale(1.08);  }
+.byM3-4C-1:hover,.byM3-4C-3:hover,.byM3-4C-7:hover{background: #24c1c2;}
+.byM6Con li:hover .byM6CTit{transform: translateY(5px)}

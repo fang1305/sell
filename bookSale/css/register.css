@@ -1,0 +1,80 @@
+*,html,body {margin: 0; padding: 0;}
+.hide { display: none;}
+body { background-color: #FAFAFA; font-family:"PingFangSC-Regular";}
+.wrap { max-width: 1200px; margin: 0 auto;}
+.header { width: 100%; height: 115px; background-color: #fff; font-size:16px;}
+.header .logo { width: auto; height: 56px; margin-top: 30px; float: left;}
+.header .left { display: inline-block; height:22px; color:#4A4A4A; line-height:22px; margin-top: 49px; float: left; margin-left: 22px;}
+.header .right { height:22px; color:#4A4A4A; line-height:22px; margin-top: 49px; float: right; }
+.header .right span { color: #D0021B; cursor: pointer;}
+.header:after { content:""; clear: both; display: block;}
+
+.main .wrap { background-color: #fff; padding-bottom: 75px;}
+.main .nav { width: 100%; height: 65px; background-color: #fff; border-bottom: 1px solid #e9e9e9; position: relative; margin-top: 28px;}
+.main .nav .list { position: absolute; bottom: -1px; left: 0; padding-left: 19px;}
+.main .nav .list .item { display: inline-block; width:96px; height:34px; background:#FAFAFA; border:1px solid #E9E9E9; font-size: 14px; line-height: 34px; color: #999999; text-align: center; margin-right: 5px; cursor: pointer;}
+.main .nav .list .item.act { background:#fff; border-bottom: 1px solid #fff; }
+.main .newuser { margin-top: 60px;}
+.main .input-group { display: flex; display: -webkit-flex; margin-bottom: 30px;}
+.main .input-group label { width: 31%; font-size:16px; color: #999999; font-family:PingFangSC-Regular; line-height: 56px; text-align: right; margin-right: 10px;}
+.main .input-group input { width: 480px; height: 56px; padding: 0 23px; border: 1px solid #D8D8D8; font-size:16px; font-family:PingFangSC-Regular; line-height: 56px; }
+.main .input-group input::placeholder { color: #D8D8D8;}
+.main .yzm input { width: 286px;}
+.main .yzm img { width: 126px; height: 56px; margin-left: 10px;}
+.main .yzm span { font-size:16px; line-height: 56px; color: #49A0FF; margin-left: 10px;}
+.corporateuser .input-group input { width: 460px;}
+.corporateuser .title { width: 31%; text-align: right; margin-top: 40px; margin-bottom: 23px;}
+.corporateuser .title img { height: 16px; width: auto; margin-right: 5px;}
+.corporateuser .title span { font-size: 16px; color: #4A4A4A; line-height: 1; font-weight: bold;}
+.corporateuser .telephone .zoneNumber { width: 57px;}
+.corporateuser .telephone span { font-size: 16px; color: #D8D8D8; line-height: 56px; margin: 0 15px;}
+.corporateuser .telephone .phoneNumber { width: 317px;}
+.corporateuser .select { width: 106px; height: 56px; border: 1px solid #D8D8D8; padding: 0 23px; margin-right: 23px; text-align: center;} 
+.corporateuser .select select { display: inline-block; width: auto; max-width: 100%; height: 100%; border: 0; outline: none; color: #D8D8D8;}
+.corporateuser .select select option { color: #000;}
+.corporateuser select  { width: 155px; text-align:center;} 
+.corporateuser .yzm input { width: 266px;}
+
+.zhu { text-align: center; margin-top: 54px;}
+.zhu .zhuCont { display: inline-block; margin: 0 auto; }
+.zhu .radio { width: 14px; height: 14px; position: relative; float: left; margin-top: 4px; margin-right: 5px;}
+.zhu .radio input { width: 14px; height: 14px; opacity: 0; position: absolute; top: 0; left: 0; z-index: 2;}
+.zhu .radio label { width: 14px; height: 14px; position: absolute; top: 0; left: 0; z-index: 1;}
+.zhu .radio input+label { background-image: url(../img/untick.png); background-size: 100% 100%; background-repeat: no-repeat;}
+.zhu .radio input:checked+label { background-image: url(../img/tick.png); background-size: 100% 100%; background-repeat: no-repeat;}
+.zhu .text { font-size: 16px; color: #9B9B9B; float: left;}
+.zhu .text span { color: #49A0FF; cursor: pointer;}
+.register { width:196px; height:56px; border-radius: 33px; background-color: #49A0FF; font-size:16px; color: #fff; line-height: 56px; text-align: center; margin: 0 auto; margin-top: 33px;}
+.bottom { text-align: center; padding-top: 50px; padding-bottom: 20px;}
+.bottom .cont a {  font-size:12px; color: #999999; line-height:24px; text-decoration: none;}
+.bottom .copy { font-size:12px; color: #999999; line-height:24px;}
+
+@media screen and (max-width: 1440px) {
+	.header { height: 87px; font-size: 14px;}
+  .header .logo { height: 43px; margin-top: 22px; } 
+  .header .left,.header .right { margin-top: 38px;}
+  .main .wrap { padding-bottom: 70px;} 
+	.main .input-group { margin-bottom: 20px;}
+	.main .input-group label { font-size:14px; line-height: 40px;}
+	.main .input-group input { height: 40px; font-size:14px; line-height: 40px; }  
+	.main .yzm img { width: 94px; height: 40px; margin-left: 10px;}
+	.main .yzm span { font-size:12px; line-height: 40px; }
+	.corporateuser .input-group input { width: 460px;}
+	.corporateuser .title { width: 31%; text-align: right; margin-top: 40px; margin-bottom: 23px;}
+	.corporateuser .title img { height: 16px; width: auto; margin-right: 5px;}
+	.corporateuser .title span { font-size: 16px; color: #4A4A4A; line-height: 1; font-weight: bold;}
+	.corporateuser .telephone .zoneNumber { width: 57px;}
+	.corporateuser .telephone span { line-height: 40px;}
+	.corporateuser .telephone .phoneNumber { width: 317px;}
+	.corporateuser .select { height: 40px;}   
+	.corporateuser .yzm input { width: 266px;}
+  .register { height: 40px; border-radius: 33px; font-size:14px; line-height: 40px; }
+  .zhu .text { font-size: 14px;}
+}
+
+@font-face {
+  font-family: "PingFangSC-Regular";
+  src: url("../fonts/PingFangSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

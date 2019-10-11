@@ -1,0 +1,79 @@
+.main { width: 100%;font-size: 0;background: #FAFAFA;}
+.main .allBook{ width: 1220px; margin: 0 auto; padding-bottom: 50px;font-size: 0;}
+
+.ad { width: 100%; line-height: 0; position: relative;}
+.ad img { width: 100%;}
+.ad .close { width: 41px; height: 20px; background-color: #747474; position: absolute; bottom: 0; right: 0; font-size: 12px; color: #fff; line-height: 20px; cursor: pointer; text-align: center;}
+
+.navbar { width: 100%; margin-top: -6px; border-bottom: 2px solid #FF5964;}  
+.navbar .title { position: relative; width: 164px; height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;  float: left;}  
+.navbar .title span { float: left;}  
+.navbar .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.navbar .nav { float: left; height: 32px; font-size: 16px; line-height: 32px;}  
+.navbar .nav a { color: #4A4A4A; text-decoration: none; padding-left: 30px;} 
+.navbar:after { content:""; clear: both; display: block;}
+.navbar .title:hover .bookTypeList {display: block;}
+
+/* 全部分类 */
+.bookTypeList { z-index: 99; position: absolute;left: 0; width: 192px; height: auto; background-color: #fff; border: 1px solid #FF5964; margin-top: 34px;top: 0;display: none;}  
+.bookTypeList .title { height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;}  
+.bookTypeList .title span { float: left;}  
+.bookTypeList .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.bookTypeList .list { padding: 0 15px;}  
+.bookTypeList .list li { border-bottom: 1px dashed #FF5964; list-style: none; padding-bottom: 11px;}  
+.bookTypeList .list li:last-child { border-bottom: 0;}  
+.bookTypeList .list li p { font-size:14px; color: #4A4A4A; line-height: 1; padding-top: 15px; cursor: pointer;}  
+.bookTypeList .list li div { width: 174px;}  
+.bookTypeList .list li div span { float: left; font-size:12px; color: #999999; line-height: 1; padding-top: 10px; cursor: pointer; padding-right: 9px;}  
+.bookTypeList .list li div span.act { color: #FF5964;}  
+.bookTypeList .list li div:after { content:""; clear: both; display: block;}
+.bookTypeList .allBookClass { height: 50px; background-color: #FF6771; text-align: right; font-size: 14px; color: #fff; line-height: 50px; padding: 0 15px; cursor: pointer;}
+.bookTypeList .allBookClass img { width: 12px; height: 6px; float: right; margin-left: 5px; margin-top: 22px; transform:rotate(-90deg); -ms-transform:rotate(-90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(-90deg);}
+
+/* 分页样式 */
+.pagingation{ margin-top: 30px; }
+.paginationjs{ display: inlin-block; float:right;margin-right: 20px; }
+.paginationjs .paginationjs-pages li:last-child{border-right: 1px solid #D8D8D8;}
+.paginationjs .paginationjs-pages li>a{color: #747474;}
+.paginationjs .paginationjs-pages li.active>a{width:32px;background:#DF0303;}
+.paginationjs .paginationjs-pages li{border: 1px solid #D8D8D8;}
+.paginationjs .paginationjs-pages li:last-child>a,
+.paginationjs .paginationjs-pages li:last-child,
+.paginationjs .paginationjs-pages li:first-child,
+.paginationjs .paginationjs-pages li:first-child>a{ border-radius: 0;}
+.paginationjs-go-input{ display: flex; display: -webkit-flex;align-items: flex-end;color: #999;font-size: 20px; }
+.paginationjs .paginationjs-go-input>input[type=text]{ margin: 0 3px;border-radius: 0; }
+.paginationjs .paginationjs-go-button>input[type=button]{ border-radius: 0;background: #DF0303;border:1px solid #DF0303; color: #FFF;width: 64px; }
+.paginationjs .paginationjs-go-button>input[type=button]:hover{ background: #e34646; }
+
+/* 轮播图 */
+.advImg{ font-size: 0; }
+.seckillImg { width: 100%; }
+
+/* 拼团热门 */
+.main .allBook .hotTitle { padding-top: 20px;font-size: 18px; color:#DF0303;display: flex;display: -webkit-flex;justify-content: center;align-items: center; }
+.main .allBook .line{ width: 16px;height: 2px;background: #DF0303;margin: 0 5px; }
+.main .allBook .img{ width: 25px; }
+.main .allBook .title{ padding-left: 9px; }
+
+/* 秒杀图书样式 */
+.main .bookList:after{content:""; clear: both; display: block;}
+.main .item{ margin:20px 10px 0;cursor:pointer;width: 285px;float:left; height: 315px;background: #FFF;padding: 10px 20px;box-sizing: border-box;}
+.main .item .poster{ width: 100%;text-align: center; }
+.main .item .poster img{ width: 123px; height: 160px; }
+.main .item .name{ font-size: 14px; color: #4A4A4A;margin: 18px 0 6px; }
+.main .item .bookFrom{ font-size: 12px;color: #DF0303;padding-bottom: 15px;border-bottom: 1px solid #E9E9E9;margin-bottom: 15px;}
+.main .item .money{ position: relative;color: #999;font-size: 12px;margin-top: 4px;}
+.main .item .price{ font-size:18px;color:rgba(223,3,3,1);line-height:18px;padding-right:10px; }
+.main .item .discount{ color:#9B9B9B;font-size: 12px; text-decoration:line-through;  }
+.main .item .sellLine{ margin-left: 7px;height: 4px;width: 88px;background: #DF0303;border-radius: 2px;display: inline-block;vertical-align: middle; }
+.main .item .addShopcart{ position: absolute;bottom: 0;right: 0;width: 80px;color: #FFF;line-height: 30px;background: #DF0303;border-radius:2px;font-size: 12px;text-align: center; }
+
+/* 展示秒杀时间 */
+.main .seckillTime{ padding: 15px 0 8px;margin: 0 10px; width: 1200px;height: 82px; }
+.main .seckillTime:after{ content: '';clear: both;display: block; }
+.main .seckillTime .chooseTime{ float:left; color: #4A4A4A; width: 240px;display: flex; background: #FFF; height: 72px; margin-top: 5px; display: -webkit-flex; align-items: center;justify-content: center; }
+.main .seckillTime .activeTime{ height: 82px;margin: 0;background: #DF0303;color: #FFF; }
+.main .seckillTime .chooseTime p.time{ font-size: 18px;font-weight: 600;margin-right: 20px; }
+.main .seckillTime .comingBtn{ width: 90px; border-radius: 2px;border: 1px solid #E9E9E9;color: #999;text-align: center;font-size: 14px;line-height: 30px; }
+.main .seckillTime .seckillStatus{ font-size: 14px;color: #FFF; }

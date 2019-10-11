@@ -1,0 +1,120 @@
+body { font-family:"PingFangSC-Regular";}
+
+.main { width: 1200px; margin: 0 auto; padding-bottom: 50px;}
+
+.ad { width: 100%; line-height: 0; position: relative;}
+.ad img { width: 100%;}
+.ad .close { width: 41px; height: 20px; background-color: #747474; position: absolute; bottom: 0; right: 0; font-size: 12px; color: #fff; line-height: 20px; cursor: pointer; text-align: center;}
+
+.navbar { width: 100%; margin-top: -6px; border-bottom: 2px solid #FF5964;}  
+.navbar .title { position: relative; width: 164px; height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;  float: left;}  
+.navbar .title span { float: left;}  
+.navbar .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.navbar .nav { float: left; height: 32px; font-size: 16px; line-height: 32px;}  
+.navbar .nav a { color: #4A4A4A; text-decoration: none; padding-left: 30px;} 
+.navbar:after { content:""; clear: both; display: block;}
+.navbar .title:hover .bookTypeList {display: block;}
+
+.bookTypeList { z-index: 99; position: absolute;left: 0; width: 192px; height: auto; background-color: #fff; border: 1px solid #FF5964; margin-top: 34px;top: 0;display: none;}  
+.bookTypeList .title { height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;}  
+.bookTypeList .title span { float: left;}  
+.bookTypeList .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.bookTypeList .list { padding: 0 15px;}  
+.bookTypeList .list li { border-bottom: 1px dashed #FF5964; list-style: none; padding-bottom: 11px;}  
+.bookTypeList .list li:last-child { border-bottom: 0;}  
+.bookTypeList .list li p { font-size:14px; color: #4A4A4A; line-height: 1; padding-top: 15px; cursor: pointer;}  
+.bookTypeList .list li div { width: 174px;}  
+.bookTypeList .list li div span { float: left; font-size:12px; color: #999999; line-height: 1; padding-top: 10px; cursor: pointer; padding-right: 9px;}  
+.bookTypeList .list li div span.act { color: #FF5964;}  
+.bookTypeList .list li div:after { content:""; clear: both; display: block;}
+.bookTypeList .allBookClass { height: 50px; background-color: #FF6771; text-align: right; font-size: 14px; color: #fff; line-height: 50px; padding: 0 15px; cursor: pointer;}
+.bookTypeList .allBookClass img { width: 12px; height: 6px; float: right; margin-left: 5px; margin-top: 22px; transform:rotate(-90deg); -ms-transform:rotate(-90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(-90deg);}
+
+
+.small-navbar { width: 100%; height: 34px; background-color: #F5F5F5;}
+.small-navbar .nav { margin-left: 213px; font-size: 0; line-height: 1; color: #999999; padding-top: 11px;}
+.small-navbar .nav span { display: inline-block; color: #999999; height: 12px; font-size: 12px; padding-right: 10px;}
+.small-navbar .nav span:first-child,.small-navbar .nav span:last-child { border-right: 0;}
+.small-navbar .nav span a { color: #4A90E2;}
+
+
+
+.saleIntro{ text-align: center; position: relative; max-width: 1200px; width: 100%; height: auto; margin: 37px 0 0px;}
+.saleIntro img{ width: 100%; height: auto; }
+.saleIntro .saleText{ position: absolute; width: 100%; line-height: 100%; left: 0; top: 50%; transform: translateY(-50%);}
+.saleIntro .saleText h1{ font-size:48px; font-family: "PingFangSC-Regular"; color: #FFFFFF; }
+
+.timerSet{ margin: 30px 0 38px; color:#4A4A4A; display: flex; display: -webkit-flex; justify-content: center; align-items: center;  font-size:18px; }
+.timerSet .timer{ background: #4A4A4A; width: 30px; height: 30px; text-align: center; color: #fff; display: inline-block; line-height: 30px; font-weight:500; margin: 0 15px; }
+
+.allBook{ width: 100%; display: flex; display: -webkit-flex; align-items:flex-start;}
+.allBook .left{ width: 180px; margin-right: 20px; background: #FAFAFA; padding: 20px 24px; box-sizing: border-box; }
+.allBook .left .titleImg { height: 16px; width: auto; margin-bottom: 16px; }
+.allBook .left ul li{ display: block;}
+.allBook .left ul.typeParent li.one{ padding-top: 6px; font-size: 17px;}
+.allBook .left ul.typeParent li.one p{ display: inline-block; color: #747474; background: url('../img/sales/icon_next.png') no-repeat; background-size: 8px auto; background-position: right center; padding-right: 18px; }
+.allBook .left ul.typeParent li.one.active p { color: #FF5964; background-image: url('../img/sales/icon_down.png'); background-size: 14px auto; padding-right: 24px; }
+.allBook .left ul.typeChild { display: none; padding: 10px 0; }
+.allBook .left li.one.active ul.typeChild { display: block; padding: 10px 0; }
+.allBook .left ul.typeChild li{ font-size: 12px; line-height: 24px; color: #999; }
+
+
+.allBook .right{ flex: 1; font-size: 0; }
+.allBook .right .chooseLine{ display: flex; display: -webkit-flex; align-items:center;justify-content: space-between; width: 100%; height: 36px; background: #F5F5f5; }
+.allBook .right .chooseLine .chooseLists li{ display: inline-block; padding: 0 15px;font-size: 12px; line-height: 17px;border-right: 1px solid #D8D8D8; color:#999; }
+.allBook .right .chooseLine .chooseLists li:last-child{ border: none; }
+.allBook .right .chooseLine .chooseLists li.iconMore:after{ content: '';display: inline-block;width: 4px; padding-right:10px; height: 17px; vertical-align: middle; background: url('../img/sales/icon_more.png') no-repeat; background-size: 9px auto; background-position: right center; }
+.allBook .right .chooseLine input.price{ outline:none;-moz-appearance: textfield;width: 40px;height: 20px;line-height: 20px;border: 1px solid #D8D8D8;padding-left: 2px;box-sizing: border-box; }
+
+.allBook .right .chooseLine .price:after{ content: "￥";position: absolute; left: 2px; }
+.allBook .right .priceIcon{ display: inline-block; vertical-align: bottom;height: 17px;padding: 2.5px 0;box-sizing: border-box;}
+.allBook .right .priceIcon img{ display: block;width: 8px; }
+.allBook .right .priceIcon img:last-child{ margin-top: 4px; }
+.allBook .right .goodsCount{ display: flex; color: #999; display: -webkit-flex;font-size: 12px;}
+.allBook .right .goodsCount span{ color: #DF0303; }
+.allBook .right .goodsCount .add{ margin: 0 14px; }
+
+.allBook .bookList:after { content:""; clear: both; display: block;}
+.allBook .bookList .item{ text-align: center;cursor: pointer; float: left; width: 160px; margin-top: 30px; padding: 0 20px 4px; } 
+.allBook .bookList .item .poster img{ max-width: 160px; max-height: 160px; min-height: 160px; } 
+.allBook .bookList .item .name{ font-size: 14px; color: #4A4A4A; padding: 12px 0 4px;} 
+.allBook .bookList .item .money{ font-size: 14px; color: #D0021B; margin: 15px 0;} 
+.allBook .bookList .item .addShopcart img{ width: 142px; }
+
+
+
+.pagingation{ margin-top: 30px; }
+.paginationjs{ display: inlin-block; float:right;margin-right: 20px; }
+.paginationjs .paginationjs-pages li:last-child{border-right: 1px solid #D8D8D8;}
+.paginationjs .paginationjs-pages li>a{color: #747474;}
+.paginationjs .paginationjs-pages li.active>a{width:32px;background:#DF0303;}
+.paginationjs .paginationjs-pages li{border: 1px solid #D8D8D8;}
+.paginationjs .paginationjs-pages li:last-child>a,
+.paginationjs .paginationjs-pages li:last-child,
+.paginationjs .paginationjs-pages li:first-child,
+.paginationjs .paginationjs-pages li:first-child>a{ border-radius: 0;}
+.paginationjs-go-input{ display: flex; display: -webkit-flex;align-items: flex-end;color: #999;font-size: 20px; }
+.paginationjs .paginationjs-go-input>input[type=text]{ margin: 0 3px;border-radius: 0; }
+.paginationjs .paginationjs-go-button>input[type=button]{ border-radius: 0;background: #DF0303;border:1px solid #DF0303; color: #FFF;width: 64px; }
+.paginationjs .paginationjs-go-button>input[type=button]:hover{ background: #e34646; }
+/* 猜你想搜 */
+.small-navbar{
+    background: rgba(0,0,0,0);
+}
+.small-navbar .nav{
+    margin-left: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+@font-face {
+    font-family: "PingFangSC-Regular";
+    src: url("../fonts/PingFangSC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
