@@ -1,11 +1,11 @@
-.main { width: 100%;font-size: 0;background: #FAFAFA;}
+.main { min-width: 1200px;width: 100%;font-size: 0;background: #FAFAFA;}
 .main .allBook{ width: 1220px; margin: 0 auto; padding-bottom: 50px;font-size: 0;}
 
 .ad { width: 100%; line-height: 0; position: relative;}
 .ad img { width: 100%;}
 .ad .close { width: 41px; height: 20px; background-color: #747474; position: absolute; bottom: 0; right: 0; font-size: 12px; color: #fff; line-height: 20px; cursor: pointer; text-align: center;}
 
-.navbar { width: 100%; margin-top: -6px; border-bottom: 2px solid #FF5964;}  
+.navbar { min-width: 1200px; width: 100%; margin-top: -6px; border-bottom: 2px solid #FF5964;}  
 .navbar .title { position: relative; width: 164px; height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;  float: left;}  
 .navbar .title span { float: left;}  
 .navbar .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  

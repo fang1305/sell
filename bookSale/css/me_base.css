@@ -1,0 +1,60 @@
+.main { min-width:1200px;width: 100%; margin: 0 auto; padding-bottom: 50px;font-size: 0;background: #FAFAFA;}
+
+.ad { width: 100%; line-height: 0; position: relative;}
+.ad img { width: 100%;}
+.ad .close { width: 41px; height: 20px; background-color: #747474; position: absolute; bottom: 0; right: 0; font-size: 12px; color: #fff; line-height: 20px; cursor: pointer; text-align: center;}
+
+.navbar { width: 100%;min-width: 1200px; margin-top: -6px; border-bottom: 2px solid #FF5964;}  
+.navbar .title { position: relative; width: 164px; height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;  float: left;}  
+.navbar .title span { float: left;}  
+.navbar .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.navbar .nav { float: left; height: 32px; font-size: 16px; line-height: 32px;}  
+.navbar .nav a { color: #4A4A4A; text-decoration: none; padding-left: 30px;} 
+.navbar:after { content:""; clear: both; display: block;}
+.navbar .title:hover .bookTypeList {display: block;}
+
+/* 全部分类 */
+.bookTypeList { z-index: 99; position: absolute;left: 0; width: 192px; height: auto; background-color: #fff; border: 1px solid #FF5964; margin-top: 34px;top: 0;display: none;}  
+.bookTypeList .title { height: 32px; font-size:12px; color: #fff; line-height: 32px; background-color: #FF5964; padding: 0 15px; cursor: pointer;}  
+.bookTypeList .title span { float: left;}  
+.bookTypeList .title img { width: 8px; height: 4px; margin-top: 14px; margin-left: 10px; float: left;}  
+.bookTypeList .list { padding: 0 15px;}  
+.bookTypeList .list li { border-bottom: 1px dashed #FF5964; list-style: none; padding-bottom: 11px;}  
+.bookTypeList .list li:last-child { border-bottom: 0;}  
+.bookTypeList .list li p { font-size:14px; color: #4A4A4A; line-height: 1; padding-top: 15px; cursor: pointer;}  
+.bookTypeList .list li div { width: 174px;}  
+.bookTypeList .list li div span { float: left; font-size:12px; color: #999999; line-height: 1; padding-top: 10px; cursor: pointer; padding-right: 9px;}  
+.bookTypeList .list li div span.act { color: #FF5964;}  
+.bookTypeList .list li div:after { content:""; clear: both; display: block;}
+.bookTypeList .allBookClass { height: 50px; background-color: #FF6771; text-align: right; font-size: 14px; color: #fff; line-height: 50px; padding: 0 15px; cursor: pointer;}
+.bookTypeList .allBookClass img { width: 12px; height: 6px; float: right; margin-left: 5px; margin-top: 22px; transform:rotate(-90deg); -ms-transform:rotate(-90deg); -moz-transform:rotate(90deg); -webkit-transform:rotate(-90deg);}
+
+/* 我的主页左侧导航栏 */
+.main .mainContent { width: 1200px; margin: 0 auto; display: flex; display: -webkit-flex;padding-top: 30px;align-items: flex-start; }
+.main .leftNav{ width: 173px;min-width: 173px; }
+.main .leftNav .leftHeader{ background: #FF5964;color: #fff;text-align: center; }
+.main .leftNav .leftHeader .icon{ width: 18px; vertical-align: middle;}
+.main .leftNav .leftHeader span{ line-height: 63px;font-size: 18px;padding-left: 3px;vertical-align: middle; }
+.main .leftNav .navList{ border:1px solid #E9E9E9;background:#FFF;width: 153px;margin-left:10px;padding: 0px 18px 20px;box-sizing: border-box;color: #4A4A4A; }
+.main .leftNav .navList .title{ font-size: 14px;font-weight: 600;margin-top: 20px;line-height: 14px; }
+.main .leftNav .navList .item{ font-size: 12px;margin-top: 15px;line-height: 14px; }
+.main .leftNav .navList .item a{ color: #4A4A4A; }
+
+/* 我的主页右侧导航栏 */
+.main .rightContent { flex: 1;margin-left: 30px; }
+.main .rightContent .titleLine{ padding-left: 10px;box-sizing: border-box;line-height: 20px;border-left: 2px solid #DF0303;font-weight: 600;font-size: 14px;color: #4a4a4a; }
+.main .rightContent .noOrder{ text-align: center;margin-top: 55px; }
+.main .rightContent .noOrder .intro{ font-weight: 600; }
+.main .rightContent .noOrder .goHome a{ margin-top: 15px;display:inline-block;width:93px;height:31px;border-radius:2px;border:1px solid #DF0303;color: #DF0303;line-height: 31px; }
+
+.bg{ background: #FFF; }
+.flex-def{ display: flex; display: -webkit-flex; }
+.flex-zBetween {-webkit-box-pack: justify;-moz-justify-content: space-between;-webkit-justify-content: space-between;justify-content: space-between;}
+.flex-cCenter { -webkit-box-align: center; -moz-align-items: center; -webkit-align-items: center; align-items: center; }
+.flex-item{ flex:1; }
+.text-over{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis; }
+
+.colorRed{ color: #DF0303; }
+.color9{ color: #999999; }
+.color{ color: #9B9B9B; }
+.fs12{ font-size: 12px; }

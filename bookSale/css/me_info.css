@@ -1,0 +1,84 @@
+.rightContent{ color:#4A4A4A;padding: 20px 20px 0px;box-sizing: border-box; }
+.rightContent .contentLine{ height:90px;font-size: 12px;color: #9B9B9B;padding: 0 20px;box-sizing: border-box;border-bottom: 1px solid #E9E9E9; }
+.rightContent .contentLine:last-child{ border: none; }
+.rightContent .contentLine .typeIcon{ width: 30px;height: 30px; }
+.rightContent .contentLine .title{ font-weight: 600;color: #323232;padding: 0 40px 0 30px; }
+.rightContent .contentLine a{ color: #49A0FF; }
+
+/* 安全中心 */
+.rightContent .titleLine label{ font-weight: normal; padding-left: 26px;color: #4A4A4A; }
+.rightContent .titleLine .colorG{ color:#7ED321 }
+.rightContent .placeGroup{ position: relative;box-sizing: border-box;width:100%;padding:20px;border-radius:5px;border:1px solid #E9E9E9;margin-top: 20px; }
+.rightContent .placeGroup .closeBtn{ position: absolute;top: 20px;right:20px;width: 20px;height: 20px;cursor: pointer; }
+.rightContent .placeGroup .editBox{ position: absolute;right:20px;bottom: 20px;color:#49A0FF;font-size: 12px; }
+.rightContent .placeGroup .editBox span{ padding-left: 12px; }
+.rightContent .placeGroup .nameTitle{ font-weight: 600;font-size: 14px; }
+.rightContent .placeGroup .nameTitle span{ color:#FFF;line-height: 16px;background: #7ED321;display: inline-block;padding: 0 3px;margin-left:15px;font-size: 12px;border-radius:2px; }
+.rightContent .placeGroup .content{ padding: 14px;color: #9B9B9B; line-height: 20px;font-size: 12px; }
+.rightContent .placeGroup .content .item{ width:390px;display:inline-block; }
+.rightContent .placeGroup .content .item:after{ content: '';display: block;clear: both; }
+.rightContent .addPlace { padding: 23px 0;box-sizing: border-box;font-size: 14px; }
+.rightContent .addPlace .colorG{ color: #7ED321; }
+.rightContent .addPlace .addBtn { padding:0 14px;line-height:32px;background:#F5F5F5;border-radius:2px;border:1px solid #E9E9E9;font-weight: 600;margin-right: 10px; }
+
+/* 我的订单 */
+.rightContent .titleLine { font-weight: 600;color: #4A4A4A; }
+.rightContent .titleLine span.list{ padding: 0 12px 0 10px;font-weight: 600px;cursor: pointer; }
+.rightContent .titleLine span.list.active{ color: #DF0303; }
+.rightContent .titleLine span.list:first-child{ padding-left: 0; }
+.rightContent .orderLine,
+.rightContent .orderGroup .headLine{ background: #F5F5F5;width: 100%;line-height: 35px;font-size: 0px;color:#999;height:35px;margin-top: 20px; }
+.rightContent .orderGroup .headLine .deleteBtn{ float: right;width:16px;height: 16px;cursor: pointer; }
+.rightContent .orderGroup .headLine .deleteBtn img{ margin-top: 10px; }
+.rightContent .orderLine span{ display: inline-block;text-align: center;font-size: 12px; }
+.rightContent .orderLine .detailW{ text-align: left;padding-left: 56px;margin-left:18px; }
+.rightContent .detailW{ width: 420px;box-sizing: border-box; }
+.rightContent .receiveW{ width: 150px; }
+.rightContent .priceW{ width: 120px; }
+.rightContent .allW{ width: 170px; }
+.rightContent .editW{ width: 90px; }
+
+.rightContent .orderGroup .headLine { margin-top:0px;font-size: 12px;padding: 0 20px;box-sizing: border-box; }
+.rightContent .orderGroup .headLine .orderTime{ padding-right: 25px; }
+.rightContent .orderGroup .headLine .orderId{ color: #49A0FF; }
+.rightContent .orderGroup .orderList{ border: 1px solid #E9E9E9;margin-top: 20px; }
+.rightContent .orderGroup .orderList .content{ padding: 20px 20px 30px; }
+.rightContent .orderGroup .orderList .content .bookImg{ display: inline-block;text-align:center;width:74px;height:86px;border:1px solid #E9E9E9; }
+.rightContent .orderGroup .orderList .content .bookImg img{ width:64px;max-width: 74px;max-height: 86px; }
+.rightContent .orderGroup .orderList .content .bookIntro{ width:300px;display: inline-block;line-height: 17px;padding-top:3px;font-size: 12px;vertical-align: top;margin-left: 20px; }
+.rightContent .orderGroup .orderList .content .bookIntro .author{ color: #999;margin-top: 20px; }
+.rightContent .orderGroup .orderList .content .center{ text-align: center;font-size: 12px; }
+.rightContent .orderGroup .orderList .content .payType{ line-height: 20px; }
+.rightContent .orderGroup .orderList .content .btn{ line-height: 27px;width: 65px;height: 27px;border-radius:2px;margin-top: 4px;color: #999;cursor: pointer; }
+.rightContent .orderGroup .orderList .content .btn.warnBtn{ color:#DF0303;border: 1px solid #DF0303; }
+.rightContent .orderGroup .orderList .content .btn.defaultBtn{ border: 1px solid #979797; }
+
+.orderItem {
+    padding-bottom: 20px;
+    border-right: 1px solid #F3F3F3;
+    border-bottom: 1px solid #f3f3f3;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.orderItem:first-child{ padding-top: 0; }
+.orderItem:last-child{ border-bottom: none;padding-bottom: 0; }
+
+.shadow {display: none;position: fixed;right: 0;left: 0;top: 0;bottom: 0;z-index: 9999;min-width: 800px;background: rgba(50,50,50,0.3);}
+.shadow .container{ position:absolute;background:#FFF;width:700px;height: 434px;top: 50%;margin-top: -217px;left:50%;margin-left: -350px; }
+.shadow .container .addHead{ height:65px;line-height: 65px;color: #999;font-size: 14px;padding: 0 20px 0 27px;box-sizing: border-box;border-bottom: 1px solid #E9E9E9; }
+.shadow .container .addHead .closeShadow{ cursor:pointer;width: 16px;float: right;margin-top: 26px; }
+.shadow .container .addMain{ padding: 20px;box-sizing: border-box; }
+.shadow .container .addMain .title{ display:inline-block;min-width: 82px;font-size: 12px;margin-right:20px;color:#9B9B9B;text-align: right; }
+.shadow .container .addMain .line{ margin-bottom: 20px;position: relative; }
+.shadow .container .addMain input{ width:183px;height:26px;border:1px solid #E9E9E9;font-size: 12px;color:#4A4A4A;line-height: 17px;padding: 0 10px;box-sizing: border-box; }
+.shadow .container .addMain input.place{ background: url('../img/sales/icon_price0.png') no-repeat;background-size: 10px auto;background-position: 68px center; width:88px;height:26px;padding-right: 20px; }
+.shadow .container .addMain input.place.down{ background-image: url('../img/sales/icon_price1.png'); }
+.shadow .container .addMain input.placeDetail{ width:404px; }
+.shadow .container .addMain input.email,
+.shadow .container .addMain input.phone{ width:183px; }
+.shadow .container .addMain .moreDesc{ color: #9B9B9B;font-size: 12px;text-align: center; }
+.shadow .container .addMain .saveBtn{ cursor: pointer;background: #DF0303;padding: 11px 0;text-align:center;font-size: 16px;color:#FFF;display: block;margin: 30px auto 0;width: 122px; }
+.shadow .container .addMain .morePhone{ color: #9B9B9B;font-size: 12px;padding: 0 16px 0 26px; }
+
+.color6{ color:#C6C6C6; }

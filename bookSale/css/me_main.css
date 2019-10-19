@@ -1,0 +1,36 @@
+.main .rightContent .userBase{ display: flex; display: -webkit-flex;width: 100%;justify-content: space-between; }
+.main .rightContent .userPart,
+.main .rightContent .userIntro{ width: 300px;padding: 20px 30px;box-sizing: border-box; }
+.main .rightContent .userIntro { width: 680px;}
+.main .rightContent .userPart { width: 300px; }
+.main .rightContent .userOrder,
+.main .rightContent .userLike{ font-size: 14px;width: 100%;min-height: 214px;margin-top: 30px;color: #4A4A4A;padding: 20px;box-sizing: border-box; }
+
+.main .rightContent .userIntro .userInfo .userLogo{ width: 86px;height: 86px;border-radius: 86px;margin-right: 18px; }
+.main .rightContent .userIntro .userInfo .userName{ color:#C6C6C6;width: 510px;vertical-align: top;display: inline-block;padding-top: 2px; }
+.main .rightContent .userIntro .userInfo .userName span{ font-size: 14px;line-height: 20px; }
+.main .rightContent .userIntro .userInfo .userName span.level{ color: #4A4A4A; }
+.main .rightContent .userIntro .userInfo .userName span.name{ font-size: 18px;font-weight: 600;color:#4A4A4A; }
+.main .rightContent .userIntro .userInfo .userName p{ padding: 3.4px 0;font-size: 14px; }
+
+.main .rightContent .userIntro .orderStatus { text-align:center;padding-top: 18px;border-top: 1px solid #E9E9E9;margin-top: 18px;display: flex;display:-webkit-flex; }
+.main .rightContent .userIntro .orderStatus .orderItem{ display:inline-block;border-right: 1px solid #E9E9E9;flex:1; }
+.main .rightContent .userIntro .orderStatus .orderItem:last-child{ border: none; }
+.main .rightContent .userIntro .orderStatus img{ width: 20px;vertical-align: middle;margin-right: 10px; }
+.main .rightContent .userIntro .orderStatus span{ font-size: 14px;color: #4A4A4A;line-height: 20px;vertical-align: middle; }
+
+.main .rightContent .userPart .title { font-size: 14px; } 
+.main .rightContent .userPart .changeItem{ text-align: center;color: #4A4A4A; }
+.main .rightContent .userPart .changeItem .changeIcon{ height: 25px;margin: 30px 0 10px; }
+.main .rightContent .userPart .changeItem:nth-child(1) .changeIcon img{ width: 17px; }
+.main .rightContent .userPart .changeItem:nth-child(2) .changeIcon img{ width: 20px;margin-top: 1px; }
+.main .rightContent .userPart .changeItem:nth-child(3) .changeIcon img{ width: 24px;margin-top: 4px; }
+.main .rightContent .userPart .changeItem p{ font-size: 14px; }
+
+.main .rightContent .userLike .orderGroup{ padding: 24px 20px 30px;box-sizing: border-box; }
+.main .rightContent .orderGroup .likeList{ width: 180px; }
+.main .rightContent .orderGroup .likeList .poster{ text-align: center;width: 180px;height: 200px;margin-bottom:20px; }
+.main .rightContent .orderGroup .likeList .poster img{ max-width: 180px;max-height: 200px; }
+.main .rightContent .orderGroup .likeList .author{ font-size: 12px;color: #9B9B9B;padding: 4px 0 12px; }
+.main .rightContent .orderGroup .likeList .price{ font-weight: 600;font-size: 16px;margin-right: 4px;line-height: 16px;color:#D0021B; }
+.main .rightContent .orderGroup .likeList .oldPrice{ text-decoration:line-through;color: #C6C6C6; font-size: 12px; line-height: 12px; }
