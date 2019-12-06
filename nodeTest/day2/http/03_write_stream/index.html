@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">点击send</button>
+    <script>
+        document.querySelector('#btn').onclick = function (params) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('get','/test');
+            xhr.send();
+            // 响应
+            xhr.onreadystatechange = function (params) {
+                // readyState = 3 的时候是响应中
+                console.log(xhr.readyState);
+                console.log(xhr.responseText);
+            }
+        }
+    </script>
+</body>
+</html>

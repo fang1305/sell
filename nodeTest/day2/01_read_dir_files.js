@@ -1,6 +1,9 @@
 var fs = require("fs");
 // 接收命令行参数,根据该目录,读取目录下的所有文件(遍历文件夹)
 const path = require('path');
+const myObj = reqiure('./obj.js'); // 引入别人包的入口文件
+// 凡是通过require引入的包,都需要使用该对象的属性或函数
+
 // 1: 接收命令行参数 node ./01_read_dir_files.js C://xxx//xxx//xx
 // 2: 修正该路径 path.resolve(process.agrv[2]);
 let inputPath = path.resolve(process.argv[2]);
